@@ -1,0 +1,20 @@
+{
+  "navigation": {
+    "products": "المنتجات",
+    "resources": "الموارد",
+    "partnerPrograms": "برامج الشركاء",
+    "aboutUs": "من نحن",
+    "orderOnline": "اطلب عبر الإنترنت",
+    "contact": "اتصل بنا"
+  },
+  "topNav": {
+    "transchemGroup": "مجموعة ترانشيم",
+    "turtleWaxRetail": "تيرتل واكس للتجزئة",
+    "learningCenter": "مركز التعلم"
+  },
+  "common": {
+    "login": "تسجيل الدخول",
+    "search": "بحث",
+    "language": "اللغة"
+  }
+} 

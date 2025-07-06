@@ -1,0 +1,40 @@
+{
+  "navigation": {
+    "products": "PRODUCTS",
+    "resources": "RESOURCES",
+    "partnerPrograms": "PARTNER PROGRAMS",
+    "aboutUs": "ABOUT US",
+    "orderOnline": "ORDER ONLINE",
+    "contact": "CONTACT"
+  },
+  "megaMenu": {
+    "seeAllChemicals": "SEE ALL CAR WASH CHEMICALS",
+    "titaniumSystems": "TITANIUM CAR WASH CHEMICAL SYSTEMS",
+    "premiumChemicals": "PREMIUM CAR WASH CHEMICALS",
+    "otherChemicals": "OTHER CAR WASH CHEMICALS",
+    "categories": "CAR WASH CHEMICAL CATEGORIES",
+    "quickAccess": "QUICK ACCESS",
+    "contactSupport": "Contact Support",
+    "downloadCatalogs": "Download Catalogs",
+    "scheduleTraining": "Schedule Training",
+    "technicalResources": "TECHNICAL RESOURCES",
+    "partnershipOpportunities": "PARTNERSHIP OPPORTUNITIES"
+  },
+  "footer": {
+    "navigation": "NAVIGATION",
+    "chemicalCategory": "CAR WASH CHEMICAL CATEGORY",
+    "carWashResources": "CAR WASH RESOURCES",
+    "home": "Home",
+    "aboutUs": "About Us",
+    "products": "Products",
+    "orderOnline": "Order Online",
+    "contact": "Contact",
+    "faq": "Frequently Asked Questions",
+    "newsletter": "Turtle Wax Pro Sparkle Newsletter"
+  },
+  "common": {
+    "phone": "1 (877) 857-3870",
+    "email": "INFO@TURTLEWAXPRO.COM",
+    "switchLanguage": "العربية"
+  }
+}

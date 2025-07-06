@@ -1,0 +1,20 @@
+{
+  "navigation": {
+    "products": "PRODUCTS",
+    "resources": "RESOURCES",
+    "partnerPrograms": "PARTNER PROGRAMS",
+    "aboutUs": "ABOUT US",
+    "orderOnline": "ORDER ONLINE",
+    "contact": "CONTACT"
+  },
+  "topNav": {
+    "transchemGroup": "Transchem Group",
+    "turtleWaxRetail": "Turtle Wax Retail",
+    "learningCenter": "Learning Center"
+  },
+  "common": {
+    "login": "Login",
+    "search": "Search",
+    "language": "Language"
+  }
+} 

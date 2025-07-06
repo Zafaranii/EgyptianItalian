@@ -1,0 +1,40 @@
+{
+  "navigation": {
+    "products": "المنتجات",
+    "resources": "الموارد",
+    "partnerPrograms": "برامج الشراكة",
+    "aboutUs": "من نحن",
+    "orderOnline": "اطلب عبر الإنترنت",
+    "contact": "اتصل بنا"
+  },
+  "megaMenu": {
+    "seeAllChemicals": "عرض جميع مواد غسيل السيارات الكيميائية",
+    "titaniumSystems": "أنظمة تيتانيوم الكيميائية لغسيل السيارات",
+    "premiumChemicals": "مواد كيميائية متميزة لغسيل السيارات",
+    "otherChemicals": "مواد كيميائية أخرى لغسيل السيارات",
+    "categories": "فئات المواد الكيميائية لغسيل السيارات",
+    "quickAccess": "وصول سريع",
+    "contactSupport": "اتصل بالدعم",
+    "downloadCatalogs": "تحميل الكتالوجات",
+    "scheduleTraining": "جدولة التدريب",
+    "technicalResources": "الموارد التقنية",
+    "partnershipOpportunities": "فرص الشراكة"
+  },
+  "footer": {
+    "navigation": "التنقل",
+    "chemicalCategory": "فئة المواد الكيميائية لغسيل السيارات",
+    "carWashResources": "موارد غسيل السيارات",
+    "home": "الرئيسية",
+    "aboutUs": "من نحن",
+    "products": "المنتجات",
+    "orderOnline": "اطلب عبر الإنترنت",
+    "contact": "اتصل بنا",
+    "faq": "الأسئلة الشائعة",
+    "newsletter": "نشرة تيرتل واكس برو سباركل الإخبارية"
+  },
+  "common": {
+    "phone": "1 (877) 857-3870",
+    "email": "INFO@TURTLEWAXPRO.COM",
+    "switchLanguage": "English"
+  }
+}
