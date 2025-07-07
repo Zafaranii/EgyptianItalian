@@ -73,38 +73,6 @@ export const FeaturesSection = (): JSX.Element => {
             >
               <img className="w-[90px] h-[66px] md:w-[150px] md:h-[66px] lg:w-[220px] lg:h-[66px]" alt="Logo" src="/images/logos/egyptian_italian.png" />
             </div>
-            
-            
-            <div>
-              {/* صورة بتدور 360 درجة وثابتة في منتصف الأعلى */}
-              <img
-                src="/images/logos/plp.jpg"
-                alt="Logo"
-                style={{
-                  position: "relative",
-                  top: "10px",
-                  left: "35%",
-                  transform: "translateX(-50%) rotate(0deg)",
-                  width: "80px",
-                  height: "80px",
-                  borderRadius: "50%",
-                  animation: "spin 10s linear infinite",
-                  zIndex: 1000,
-                }}
-              />
-
-              {/* تعريف التحريك (CSS inline) */}
-              <style>{`
-                @keyframes spin {
-                  from {
-                    transform: translateX(-50%) rotate(0deg);
-                  }
-                  to {
-                    transform: translateX(-50%) rotate(360deg);
-                  }
-                }
-              `}</style>
-            </div>
 
             {/* Desktop Language Toggle */}
             <div className="hidden md:block">
