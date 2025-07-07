@@ -8,22 +8,23 @@ export const ContactPage = (): JSX.Element => {
 
   return (
     <PageLayout>
-      <div className="min-h-screen bg-gray-50">
-        {/* Breadcrumb */}
-        <div className="container mx-auto px-4 pt-8 pb-4">
-          <nav className="text-sm text-gray-400 flex items-center space-x-2">
-            <span className="hover:text-[#00824a] cursor-pointer" onClick={() => navigate('/')}>Home</span>
+      {/* Breadcrumb with photo background */}
+      <div className="w-full h-32 flex items-end" style={{
+        backgroundImage: "url('https://images.pexels.com/photos/3153198/pexels-photo-3153198.jpeg?auto=compress&cs=tinysrgb&w=1200&h=300&fit=crop')",
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}>
+        <div className="container mx-auto px-4 pb-4">
+          <nav className="text-sm text-white flex items-center space-x-2 bg-black/40 rounded px-3 py-2 w-fit">
+            <span className="hover:text-[#00b67a] cursor-pointer" onClick={() => navigate('/')}>Home</span>
             <span className="mx-1">/</span>
-            <span className="text-[#ff4d4f]">Contact</span>
+            <span className="text-[#ffeb3b]">Contact</span>
           </nav>
         </div>
+      </div>
+      <div className="min-h-screen bg-gray-50">
         {/* Header */}
-        <div className="bg-[#00824a] text-white py-16">
-          <div className="container mx-auto px-4 text-center">
-            <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
-            <p className="text-xl">Get in touch with our team</p>
-          </div>
-        </div>
+
 
         {/* Content */}
         <div className="container mx-auto px-4 py-16">

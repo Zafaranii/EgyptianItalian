@@ -16,9 +16,8 @@ export const FeaturesSection = (): JSX.Element => {
   // Navigation menu items data with routes - reverse array for Arabic to ensure proper RTL order
   const navItems = useMemo(() => {
     const baseNavItems = [
+      { text: t('navigation.home'), position: "left-[100px]", route: "/", hasMegaMenu: false },
       { text: t('navigation.products'), position: "left-[83px]", route: "/products", hasMegaMenu: true },
-      { text: t('navigation.resources'), position: "left-[79px]", route: "/resources", hasMegaMenu: true },
-      { text: t('navigation.partnerPrograms'), position: "left-[46px]", route: "/partner-programs", hasMegaMenu: true },
       { text: t('navigation.aboutUs'), position: "left-[86px]", route: "/about-us", hasMegaMenu: false },
       { text: t('navigation.orderOnline'), position: "left-[68px]", route: "/order-online", hasMegaMenu: false },
       { text: t('navigation.contact'), position: "left-[89px]", route: "/contact", hasMegaMenu: false },
@@ -114,7 +113,7 @@ export const FeaturesSection = (): JSX.Element => {
           </div>
 
           {/* Desktop Main navigation */}
-          <div className={`hidden md:flex h-[47px] mt-auto ${i18n.language === 'ar' ? 'flex-row-reverse' : ''}`}>
+          <div className={`hidden md:flex h-[60px] mt-auto justify-center border-b border-gray-200 shadow-sm mb-2 ${i18n.language === 'ar' ? 'flex-row-reverse' : ''}`}>
             {navItems.map((item, index) => (
               <React.Fragment key={`${i18n.language}-navitem-${index}`}>
                 {index > 0 && (
@@ -126,7 +125,7 @@ export const FeaturesSection = (): JSX.Element => {
                   />
                 )}
                 <div 
-                  className={`w-[248px] h-[47px] border-b-2 relative cursor-pointer transition-all duration-300 ${
+                  className={`w-full md:w-[248px] h-[60px] border-b-2 relative cursor-pointer transition-all duration-300 flex items-center justify-center ${
                     hoveredItem === item.text 
                       ? 'border-[#00824a] bg-gradient-to-t from-[#00824a]/10 to-transparent' 
                       : 'border-white hover:border-[#00824a]/50 hover:bg-gradient-to-t hover:from-[#00824a]/5 hover:to-transparent'
@@ -135,7 +134,7 @@ export const FeaturesSection = (): JSX.Element => {
                   onClick={() => handleNavClick(item.route)}
                 >
                   <div
-                    className={`absolute top-3 ${item.position} font-['Inter',Helvetica] font-normal text-[13px] text-center tracking-[0.75px] leading-[15.8px] whitespace-nowrap transition-colors duration-300 ${
+                    className={`font-['Inter',Helvetica] font-normal text-[13px] text-center tracking-[0.75px] leading-[15.8px] whitespace-nowrap transition-colors duration-300 ${
                       hoveredItem === item.text 
                         ? 'text-[#00824a] font-semibold' 
                         : 'text-[#545859] hover:text-[#00824a]'
@@ -168,38 +167,30 @@ export const FeaturesSection = (): JSX.Element => {
         </div>
       </header>
 
-      {/* Mobile Navigation Menu - Overlay (absolute root level) */}
+      {/* Mobile Navigation Menu - Block below header */}
       {isMobileMenuOpen && (
-        <>
-          {/* Backdrop */}
-          <div
-            className="fixed inset-0 bg-black bg-opacity-40 z-[9999]"
-            onClick={toggleMobileMenu}
-          />
-          {/* Menu */}
-          <div className="fixed top-0 left-0 right-0 z-[10000] bg-white shadow-lg animate-slide-down">
-            <nav className="px-4 py-2">
-              <ul className="space-y-1">
-                {navItems.map((item, index) => (
-                  <li key={`mobile-${i18n.language}-navitem-${index}`}>
-                    <button
-                      onClick={() => handleNavClick(item.route)}
-                      className={`w-full text-left px-4 py-3 rounded-md transition-colors duration-200 font-medium ${
-                        hoveredItem === item.text
-                          ? 'bg-[#00824a] text-white'
-                          : 'text-[#545859] hover:bg-gray-100 hover:text-[#00824a]'
-                      }`}
-                      onMouseEnter={() => setHoveredItem(item.text)}
-                      onMouseLeave={() => setHoveredItem(null)}
-                    >
-                      {item.text}
-                    </button>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-          </div>
-        </>
+        <div className="block md:hidden w-full bg-white shadow-lg animate-slide-down z-50">
+          <nav className="px-4 py-2">
+            <ul className="space-y-1">
+              {navItems.map((item, index) => (
+                <li key={`mobile-${i18n.language}-navitem-${index}`}>
+                  <button
+                    onClick={() => handleNavClick(item.route)}
+                    className={`w-full text-left px-4 py-3 rounded-md transition-colors duration-200 font-medium ${
+                      hoveredItem === item.text
+                        ? 'bg-[#00824a] text-white'
+                        : 'text-[#545859] hover:bg-gray-100 hover:text-[#00824a]'
+                    }`}
+                    onMouseEnter={() => setHoveredItem(item.text)}
+                    onMouseLeave={() => setHoveredItem(null)}
+                  >
+                    {item.text}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </div>
       )}
     </div>
   );

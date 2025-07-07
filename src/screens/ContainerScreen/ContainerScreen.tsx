@@ -1,7 +1,9 @@
-import { ChemicalCategoriesSection } from "./sections/ChemicalCategoriesSection";
 import { FeaturesSection } from "./sections/FeaturesSection";
 import { FooterSection } from "./sections/FooterSection";
 import { HeroSection } from "./sections/HeroSection";
+import { WhoWeAreSection } from "./sections/whoweare/WhoWeAreSection";
+import { RoadmapTimelineSection } from "./RoadmapTimelineSection/RoadmapTimelineSection";
+import { SlideshowSection } from "./sections/SlideshowSection";
 
 
 export const ContainerScreen = (): JSX.Element => {
@@ -9,8 +11,12 @@ export const ContainerScreen = (): JSX.Element => {
     <div className="bg-white w-full min-h-screen">
       <div className="bg-white w-full min-h-screen">
         <FeaturesSection />
-        <ChemicalCategoriesSection />
+        <SlideshowSection />
+
+        <RoadmapTimelineSection />
+        <WhoWeAreSection />
         <HeroSection />
+
         <FooterSection /> 
       </div>
     </div>

@@ -1,1 +1,0 @@
-export { ChemicalCategoriesSection } from "./ChemicalCategoriesSection";

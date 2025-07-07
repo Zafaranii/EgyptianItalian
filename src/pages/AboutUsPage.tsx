@@ -1,89 +1,65 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
-import { Button } from "../components/ui/button";
+import { useTranslation } from "react-i18next";
 import { PageLayout } from "../components/layout/PageLayout";
+import { MdDonutLarge } from "react-icons/md";
+import { FaLeaf, FaHandshake } from "react-icons/fa";
+import { GiGearHammer } from "react-icons/gi";
 
 export const AboutUsPage = (): JSX.Element => {
-  const navigate = useNavigate();
+  const { t, i18n } = useTranslation();
+  const values = t('aboutUsPage.values', { returnObjects: true }) as Array<{icon: string, title: string, desc: string}>;
+
+  // Map each value to its icon
+  const iconMap = [
+    <MdDonutLarge size={36} color="#fff" />,        // Quality (tire-like)
+    <GiGearHammer size={36} color="#fff" />,        // Innovation
+    <FaLeaf size={36} color="#fff" />,              // Sustainability
+    <FaHandshake size={36} color="#fff" />          // Partnership
+  ];
 
   return (
     <PageLayout>
-      <div className="min-h-screen bg-gray-50">
-        {/* Breadcrumb */}
-        <div className="container mx-auto px-4 pt-8 pb-4">
-          <nav className="text-sm text-gray-400 flex items-center space-x-2">
-            <span className="hover:text-[#00824a] cursor-pointer" onClick={() => navigate('/')}>Home</span>
+      {/* Breadcrumb with photo background */}
+      <div className="w-full h-32 flex items-end" style={{
+        backgroundImage: "url('https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1200&h=300&fit=crop')",
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}>
+        <div className="container mx-auto px-4 pb-4">
+          <nav className="text-sm text-white flex items-center space-x-2 bg-black/40 rounded px-3 py-2 w-fit">
+            <span className="hover:text-[#00b67a] cursor-pointer" onClick={() => window.location.href = '/'}>Home</span>
             <span className="mx-1">/</span>
-            <span className="text-[#ff4d4f]">About Us</span>
+            <span className="text-[#ffeb3b]">{t('aboutUsPage.heading')}</span>
           </nav>
         </div>
-        {/* Header */}
-        <div className="bg-[#00824a] text-white py-16">
-          <div className="container mx-auto px-4 text-center">
-            <h1 className="text-4xl font-bold mb-4">About Us</h1>
-            <p className="text-xl">Learn about our mission and values</p>
+      </div>
+      <div className="min-h-screen bg-gray-50 flex flex-col items-center py-12 px-4">
+        <h1 className="text-4xl font-bold mb-2 text-center">{t('aboutUsPage.heading')}</h1>
+        <div className="w-16 h-1 bg-[#00824a] rounded my-8"></div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-3xl mb-12 mx-auto">
+          <div className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center">
+            <h2 className="text-2xl font-semibold mb-2 text-[#00824a]">{t('aboutUsPage.missionTitle')}</h2>
+            <p className="text-gray-700 text-center">{t('aboutUsPage.missionText')}</p>
+          </div>
+          <div className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center">
+            <h2 className="text-2xl font-semibold mb-2 text-[#00824a]">{t('aboutUsPage.visionTitle')}</h2>
+            <p className="text-gray-700 text-center">{t('aboutUsPage.visionText')}</p>
           </div>
         </div>
 
-        {/* Content */}
-        <div className="container mx-auto px-4 py-16">
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-white rounded-lg shadow-md p-8 mb-8">
-              <h2 className="text-3xl font-bold mb-6 text-[#00824a]">Our Story</h2>
-              <p className="text-gray-700 leading-relaxed mb-6">
-                Egyptian Italian is a leading provider of high-quality car wash chemicals and solutions. 
-                With years of experience in the industry, we have built a reputation for excellence, 
-                innovation, and customer satisfaction.
-              </p>
-              <p className="text-gray-700 leading-relaxed mb-6">
-                Our mission is to provide car wash operators with the most effective, efficient, 
-                and environmentally friendly cleaning solutions available in the market today.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-              <div className="bg-white rounded-lg shadow-md p-6">
-                <h3 className="text-xl font-semibold mb-4 text-[#00824a]">Our Mission</h3>
-                <p className="text-gray-700">
-                  To deliver innovative car wash solutions that exceed customer expectations 
-                  while maintaining the highest standards of quality and environmental responsibility.
-                </p>
-              </div>
-              <div className="bg-white rounded-lg shadow-md p-6">
-                <h3 className="text-xl font-semibold mb-4 text-[#00824a]">Our Vision</h3>
-                <p className="text-gray-700">
-                  To be the global leader in car wash chemical solutions, recognized for 
-                  innovation, quality, and commitment to customer success.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-lg shadow-md p-8">
-              <h2 className="text-3xl font-bold mb-6 text-[#00824a]">Our Values</h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-[#00824a] rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-white text-2xl">✨</span>
-                  </div>
-                  <h4 className="font-semibold mb-2">Quality</h4>
-                  <p className="text-gray-600 text-sm">We never compromise on quality</p>
+        <div className="w-full max-w-5xl">
+          <h2 className="text-2xl font-bold mb-6 text-center">{t('aboutUsPage.valuesTitle')}</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            {values.map((value, idx) => (
+              <div key={idx} className="bg-white rounded-lg shadow p-6 flex flex-col items-center text-center">
+                <div className="w-14 h-14 flex items-center justify-center rounded-full bg-[#00824a] mb-4">
+                  {iconMap[idx]}
                 </div>
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-[#00824a] rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-white text-2xl">🌱</span>
-                  </div>
-                  <h4 className="font-semibold mb-2">Sustainability</h4>
-                  <p className="text-gray-600 text-sm">Environmental responsibility is our priority</p>
-                </div>
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-[#00824a] rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-white text-2xl">🤝</span>
-                  </div>
-                  <h4 className="font-semibold mb-2">Partnership</h4>
-                  <p className="text-gray-600 text-sm">We build lasting relationships</p>
-                </div>
+                <h3 className="font-semibold mb-2">{value.title}</h3>
+                <p className="text-gray-600 text-sm">{value.desc}</p>
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

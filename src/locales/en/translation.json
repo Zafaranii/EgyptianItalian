@@ -36,5 +36,36 @@
     "phone": "1 (877) 857-3870",
     "email": "INFO@TURTLEWAXPRO.COM",
     "switchLanguage": "العربية"
+  },
+  "timeline": {
+    "heading": "Roadmap So Far (Historical Timeline)",
+    "1940s1950s": {
+      "year": "1940s–1950s",
+      "desc": "Tire retreading industry begins in Europe and America over 75 years ago."
+    },
+    "2004": {
+      "year": "2004",
+      "desc": "Egyptian Italian Company for Tire Retreading (E.I.R) established as an Egyptian joint-stock company, specializing in retreading tires for heavy equipment and transport vehicles."
+    },
+    "20042005": {
+      "year": "2004–2005",
+      "desc": "Company imports advanced machinery and retreading equipment from Italy to set up operations."
+    },
+    "20052010": {
+      "year": "2005–2010",
+      "desc": "Trains Egyptian technicians and engineers under supervision of Italian experts to ensure high-quality retreading standards."
+    },
+    "20102015": {
+      "year": "2010–2015",
+      "desc": "Expands services to include specialized tire repairs for punctures, cuts, and cracks."
+    },
+    "20152020": {
+      "year": "2015–2020",
+      "desc": "Focuses on modernizing technology and adopting the latest global methods in tire retreading for greater quality and efficiency."
+    },
+    "20202025": {
+      "year": "2020–2025",
+      "desc": "Develops strong reputation in Egypt as a trusted partner in heavy tire retreading and environmentally sustainable practices."
+    }
   }
 }
