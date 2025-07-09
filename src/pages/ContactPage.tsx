@@ -9,6 +9,7 @@ export const ContactPage = (): JSX.Element => {
   return (
     <PageLayout>
       {/* Breadcrumb with photo background  */}
+      {/* Breadcrumb with photo background */}
       <div className="w-full h-32 flex items-end" style={{
         backgroundImage: "url('/images/CD/home.jpg')",
         backgroundSize: 'cover',

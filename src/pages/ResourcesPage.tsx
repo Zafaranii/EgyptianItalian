@@ -10,7 +10,7 @@ export const ResourcesPage = (): JSX.Element => {
     <PageLayout>
       {/* Breadcrumb with photo background */}
       <div className="w-full h-32 flex items-end" style={{
-        backgroundImage: "url('/images/CD/one.JPG')",
+        backgroundImage: "url('/images/CD/home.jpg')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}>
