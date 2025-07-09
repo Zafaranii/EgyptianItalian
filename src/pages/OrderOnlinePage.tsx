@@ -31,10 +31,10 @@ export const OrderOnlinePage = (): JSX.Element => {
         backgroundPosition: 'center',
       }}>
         <div className="container mx-auto px-4 pb-4">
-          <nav className="text-sm text-white flex items-center space-x-2 bg-black/40 rounded px-3 py-2 w-fit">
-            <span className="hover:text-[#00b67a] cursor-pointer" onClick={() => window.location.href = '/'}>Home</span>
+          <nav className="text-xs sm:text-sm md:text-base text-white flex items-center space-x-2 bg-black/40 rounded px-3 py-2 w-fit">
+            <span className="hover:text-[#00b67a] cursor-pointer" onClick={() => window.location.href = '/'}>{t('navigation.home')}</span>
             <span className="mx-1">/</span>
-            <span className="text-[#ffeb3b]">Upload Your CV</span>
+            <span className="text-[#ffeb3b]">{t('navigation.orderOnline')}</span>
           </nav>
         </div>
           </div>

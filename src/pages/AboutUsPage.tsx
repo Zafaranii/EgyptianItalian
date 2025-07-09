@@ -26,16 +26,22 @@ export const AboutUsPage = (): JSX.Element => {
         backgroundPosition: 'center',
       }}>
         <div className="container mx-auto px-4 pb-4">
-          <nav className="text-sm text-white flex items-center space-x-2 bg-black/40 rounded px-3 py-2 w-fit">
-            <span className="hover:text-[#00b67a] cursor-pointer" onClick={() => window.location.href = '/'}>Home</span>
+          <nav className="text-xs sm:text-sm md:text-base text-white flex items-center space-x-2 bg-black/40 rounded px-3 py-2 w-fit">
+            <span className="hover:text-[#00b67a] cursor-pointer" onClick={() => window.location.href = '/'}>{t('navigation.home')}</span>
             <span className="mx-1">/</span>
-            <span className="text-[#ffeb3b]">{t('aboutUsPage.heading')}</span>
+            <span className="text-[#ffeb3b]">{t('navigation.aboutUs')}</span>
           </nav>
         </div>
       </div>
       <div className="min-h-screen bg-gray-50 flex flex-col items-center py-12 px-4">
         <h1 className="text-4xl font-bold mb-2 text-center">{t('aboutUsPage.heading')}</h1>
         <div className="w-16 h-1 bg-[#00824a] rounded my-8"></div>
+
+        {/* Our Story Section */}
+        <div className="w-full max-w-4xl mb-12 mx-auto">
+          <h2 className="text-2xl font-bold mb-4 text-center">{t('aboutUsPage.storyTitle')}</h2>
+          <p className="text-gray-700 text-lg text-center">{t('aboutUsPage.storyText')}</p>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-3xl mb-12 mx-auto">
           <div className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center">

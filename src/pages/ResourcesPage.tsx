@@ -2,9 +2,11 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "../components/ui/button";
 import { PageLayout } from "../components/layout/PageLayout";
+import { useTranslation } from "react-i18next";
 
 export const ResourcesPage = (): JSX.Element => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   return (
     <PageLayout>
@@ -15,10 +17,10 @@ export const ResourcesPage = (): JSX.Element => {
         backgroundPosition: 'center',
       }}>
         <div className="container mx-auto px-4 pb-4">
-          <nav className="text-sm text-white flex items-center space-x-2 bg-black/40 rounded px-3 py-2 w-fit">
-            <span className="hover:text-[#00b67a] cursor-pointer" onClick={() => navigate('/')}>Home</span>
+          <nav className="text-xs sm:text-sm md:text-base text-white flex items-center space-x-2 bg-black/40 rounded px-3 py-2 w-fit">
+            <span className="hover:text-[#00b67a] cursor-pointer" onClick={() => navigate('/')}>{t('navigation.home')}</span>
             <span className="mx-1">/</span>
-            <span className="text-[#ffeb3b]">Resources</span>
+            <span className="text-[#ffeb3b]">{t('navigation.resources')}</span>
           </nav>
         </div>
       </div>

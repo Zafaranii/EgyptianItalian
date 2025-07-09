@@ -1,5 +1,5 @@
 {
-  "companyName": "Egyptian Italian Company for Tire Retreading (E.I.R)",
+  "companyName": "Egyptian Italian Retreading Company (E.I.R)",
   "navigation": {
     "home": "Home",
     "products": "Products",
@@ -63,24 +63,24 @@
     "desc": "Contact us today to discuss your tire retreading needs!"
   },
   "footer": {
-    "companyName": "Egyptian Italian Company for Tire Retreading (E.I.R)",
+    "companyName": "Egyptian Italian Retreading Company (E.I.R)",
     "companyDesc": "Specialists in retreading and repairing heavy equipment and transport tires since 2004, combining Italian technology with local expertise.",
     "quickLinks": "Quick Links",
     "home": "Home",
     "aboutUs": "About Us",
     "products": "Products",
     "services": "Services",
-    "partnerPrograms": "Partner Programs",
+    "partnerPrograms": "Hiring Request",
     "uploadCv": "Upload Your CV",
     "contact": "Contact",
     "contactInfo": "Contact Information",
-    "address": "Address: [Factory Address in Egypt]",
-    "phone": "Phone: [Your company phone]",
-    "email": "Email: info@company.com",
+    "address": "Address: 26th kilometer Alexandria-Cairo Desert Road, Al-Ameriya - Alexandria",
+    "phone": "Phone:",
+    "email": "Email:",
     "hours": "Working Hours: Sat – Thu | 9 AM – 5 PM",
     "environmentTitle": "Environmental Message",
     "environmentMsg": "We're committed to sustainability by extending tire life and reducing environmental impact through advanced retreading processes.",
-    "copyright": "© 2025 Egyptian Italian Company for Tire Retreading. All rights reserved.",
+    "copyright": "© 2025 Egyptian Italian Retreading Company. All rights reserved.",
     "followUs": "Follow us"
   },
   "whyChoose": {
@@ -140,7 +140,7 @@
     },
     "2004": {
       "year": "2004",
-      "desc": "Egyptian Italian Company for Tire Retreading (E.I.R) established as an Egyptian joint-stock company, specializing in retreading tires for heavy equipment and transport vehicles."
+      "desc": "Egyptian Italian Retreading Company (E.I.R) established as an Egyptian joint-stock company, specializing in retreading tires for heavy equipment and transport vehicles."
     },
     "20042005": {
       "year": "2004–2005",

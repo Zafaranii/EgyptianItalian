@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { FaTools, FaTruck, FaWrench, FaFlag, FaCog } from "react-icons/fa";
 
 interface MegaMenuProps {
   isVisible: boolean;
@@ -9,7 +10,7 @@ interface MegaMenuProps {
 interface MenuItem {
   name: string;
   image: string;
-  icon: string;
+  icon: React.ReactNode;
   link: string;
   desc?: string;
 }
@@ -41,36 +42,36 @@ export const MegaMenu = ({ isVisible, hoveredItem }: MegaMenuProps): JSX.Element
           items: [
             {
               name: t('megaMenu.service1'),
-              image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400&h=200&fit=crop",
-              icon: "🛠️",
+              image: "/images/CD/seven.JPG",
+              icon: <FaTools />,
               link: "/products/heavy-equipment-retreading",
               desc: t('megaMenu.serviceCard1Desc'),
             },
             {
               name: t('megaMenu.service2'),
-              image: "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=400&h=200&fit=crop",
-              icon: "🚚",
+              image: "/images/CD/eight.JPG",
+              icon: <FaTruck />,
               link: "/products/heavy-transport-retreading",
               desc: t('megaMenu.serviceCard2Desc'),
             },
             {
               name: t('megaMenu.service3'),
-              image: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400&h=200&fit=crop",
-              icon: "🔧",
+              image: "/images/CD/nine.JPG",
+              icon: <FaWrench />,
               link: "/products/tire-damage-repairs",
               desc: t('megaMenu.serviceCard3Desc'),
             },
             {
               name: t('megaMenu.service4'),
-              image: "https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=400&h=200&fit=crop",
-              icon: "🇮🇹",
+              image: "/images/CD/ten.JPG",
+              icon: <FaFlag />,
               link: "/products/italian-technology",
               desc: t('megaMenu.serviceCard4Desc'),
             },
             {
               name: t('megaMenu.service5'),
-              image: "https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=400&h=200&fit=crop",
-              icon: "⚙️",
+              image: "/images/CD/eleven.JPG",
+              icon: <FaCog />,
               link: "/products/customized-retreading",
               desc: "",
             },
@@ -240,29 +241,8 @@ export const MegaMenu = ({ isVisible, hoveredItem }: MegaMenuProps): JSX.Element
                 </div>
               </>
             )}
-            
             {/* For other menu items, show related info */}
-            {hoveredItem !== "PRODUCTS" && (
-              <div className="space-y-4">
-                <h3 className="text-sm font-bold text-gray-800 mb-4 tracking-wider">
-                  QUICK ACCESS
-                </h3>
-                <div className="space-y-3">
-                  <div className="p-3 bg-white rounded border hover:border-[#00824a] cursor-pointer transition-colors duration-200">
-                    <div className="text-sm font-medium text-[#00824a]">Contact Support</div>
-                    <div className="text-xs text-gray-600">Get help from our experts</div>
-                  </div>
-                  <div className="p-3 bg-white rounded border hover:border-[#00824a] cursor-pointer transition-colors duration-200">
-                    <div className="text-sm font-medium text-[#00824a]">Download Catalogs</div>
-                    <div className="text-xs text-gray-600">Browse our product catalogs</div>
-                  </div>
-                  <div className="p-3 bg-white rounded border hover:border-[#00824a] cursor-pointer transition-colors duration-200">
-                    <div className="text-sm font-medium text-[#00824a]">Schedule Training</div>
-                    <div className="text-xs text-gray-600">Book a training session</div>
-                  </div>
-                </div>
-              </div>
-            )}
+            {/* Quick Access section removed */}
           </div>
         </div>
       </div>

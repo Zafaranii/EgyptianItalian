@@ -70,7 +70,7 @@ export const FeaturesSection = (): JSX.Element => {
               className="cursor-pointer transition-transform duration-200 hover:scale-105"
               onClick={() => navigate('/')}
             >
-              <img className="w-[90px] h-[66px] md:w-[150px] md:h-[66px] lg:w-[220px] lg:h-[66px]" alt="Logo" src="/images/logos/logo.jpg" />
+              <img className="w-[90px] h-[66px] md:w-[150px] md:h-[66px] lg:w-[220px] lg:h-[66px] object-cover" alt="Logo" src="/images/logos/eir.png" />
             </div>
 
             {/* Desktop Language Toggle */}

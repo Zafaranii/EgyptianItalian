@@ -12,10 +12,10 @@ export const ContainerScreen = (): JSX.Element => {
       <div className="bg-white w-full min-h-screen">
         <FeaturesSection />
         <SlideshowSection />
-
-        <RoadmapTimelineSection />
         <WhoWeAreSection />
         <HeroSection />
+
+        <RoadmapTimelineSection />
 
         <FooterSection /> 
       </div>
