@@ -1,0 +1,187 @@
+{
+  "companyName": "Egyptian Italian Company for Tire Retreading (E.I.R)",
+  "navigation": {
+    "home": "Home",
+    "products": "Products",
+    "resources": "Resources",
+    "partnerPrograms": "Partner Programs",
+    "aboutUs": "About Us",
+    "orderOnline": "Hiring Request",
+    "contact": "Contact"
+  },
+  "mainBanner": {
+    "exploreServices": "Explore All Tire Retreading Services"
+  },
+  "services": {
+    "heading": "Tire Retreading Services",
+    "heavyEquipment": "Heavy Equipment Tire Retreading",
+    "heavyTransport": "Heavy Transport Tire Retreading",
+    "damageRepair": "Tire Damage Repair Services",
+    "italianTech": "Italian Imported Retreading Technology",
+    "customized": "Customized Retreading Solutions"
+  },
+  "sidebar": {
+    "title": "TIRE RETREADING SERVICE CATEGORIES",
+    "heavyEquipment": "Tire Retreading for Heavy Equipment",
+    "heavyTransport": "Tire Retreading for Heavy Transport",
+    "damageRepairs": "Tire Damage Repairs (Punctures, Cuts, Cracks)",
+    "sustainability": "Environmental Sustainability Solutions",
+    "italianTech": "Italian Technology & Equipment"
+  },
+  "productCards": {
+    "heavyEquipment": {
+      "title": "Heavy Equipment Retreading",
+      "desc": "High-quality retreading for loaders, excavators, and other machinery using advanced Italian technology."
+    },
+    "heavyTransport": {
+      "title": "Heavy Transport Retreading",
+      "desc": "Retreading services for trucks and trailers to reduce costs and preserve the environment."
+    },
+    "damageRepairs": {
+      "title": "Tire Damage Repairs",
+      "desc": "Specialized repair of punctures, cuts, and cracks by skilled technicians."
+    },
+    "italianTech": {
+      "title": "Italian Technology",
+      "desc": "Advanced machinery and techniques imported from Italy for superior retreading results."
+    }
+  },
+  "aboutUsSection": {
+    "heading": "About Us",
+    "desc": "Founded in 2004, the Egyptian Italian Company specializes in retreading tires for heavy equipment and heavy transport. We combine Italian expertise with the latest technology to deliver cost-effective and environmentally friendly solutions."
+  },
+  "environmentalCommitment": {
+    "heading": "Environmental Commitment",
+    "desc": "We help protect the environment by retreading used tires and reintegrating them into the production cycle."
+  },
+  "partnerPrograms": {
+    "heading": "Partner Programs",
+    "desc": "Partner with us for customized retreading solutions and training programs for technicians."
+  },
+  "contactSection": {
+    "heading": "Contact",
+    "desc": "Contact us today to discuss your tire retreading needs!"
+  },
+  "footer": {
+    "companyName": "Egyptian Italian Company for Tire Retreading (E.I.R)",
+    "companyDesc": "Specialists in retreading and repairing heavy equipment and transport tires since 2004, combining Italian technology with local expertise.",
+    "quickLinks": "Quick Links",
+    "home": "Home",
+    "aboutUs": "About Us",
+    "products": "Products",
+    "services": "Services",
+    "partnerPrograms": "Partner Programs",
+    "uploadCv": "Upload Your CV",
+    "contact": "Contact",
+    "contactInfo": "Contact Information",
+    "address": "Address: [Factory Address in Egypt]",
+    "phone": "Phone: [Your company phone]",
+    "email": "Email: info@company.com",
+    "hours": "Working Hours: Sat – Thu | 9 AM – 5 PM",
+    "environmentTitle": "Environmental Message",
+    "environmentMsg": "We're committed to sustainability by extending tire life and reducing environmental impact through advanced retreading processes.",
+    "copyright": "© 2025 Egyptian Italian Company for Tire Retreading. All rights reserved.",
+    "followUs": "Follow us"
+  },
+  "whyChoose": {
+    "heading": "Why Choose Us?",
+    "experienceTitle": "Experience You Can Trust",
+    "experienceDesc": "Over 20 years in tire retreading for heavy equipment and transport vehicles, delivering reliable results.",
+    "italianTechTitle": "Italian Technology & Expertise",
+    "italianTechDesc": "We use advanced machinery imported from Italy and rely on expert Italian training for our technicians.",
+    "costSavingsTitle": "Cost Savings",
+    "costSavingsDesc": "Our retreading solutions help clients significantly reduce operational costs compared to buying new tires.",
+    "environmentTitle": "Environmental Responsibility",
+    "environmentDesc": "We protect the environment by recycling used tires and reintegrating them into production, reducing waste and pollution.",
+    "qualityTitle": "Quality Assurance",
+    "qualityDesc": "We use premium raw materials and strict quality control to ensure durable and safe retreaded tires.",
+    "fastTurnaroundTitle": "Fast Turnaround",
+    "fastTurnaroundDesc": "Efficient processes mean quicker delivery times, minimizing equipment downtime for our clients."
+  },
+  "yearsExperience": {
+    "heading": "Years of Industry Experience",
+    "desc": "The tire retreading industry has existed in Europe and America for over 75 years, and we bring this legacy of expertise to our operations."
+  },
+  "megaMenu": {
+    "productsSection": "Tire Retreading Services",
+    "service1": "Heavy Equipment Tire Retreading",
+    "service2": "Heavy Transport Tire Retreading",
+    "service3": "Tire Damage Repair Services",
+    "service4": "Italian Imported Retreading Technology",
+    "service5": "Customized Retreading Solutions",
+    "serviceCard1Desc": "High-quality retreading for loaders, excavators, and other heavy machinery using advanced Italian technology.",
+    "serviceCard2Desc": "Retreading services for trucks and trailers to reduce costs and preserve the environment.",
+    "serviceCard3Desc": "Specialized repair of punctures, cuts, and cracks by skilled technicians.",
+    "serviceCard4Desc": "Advanced machinery and techniques imported from Italy for superior retreading results.",
+    "serviceCard5Desc": "Tailored retreading solutions to meet unique client needs and applications.",
+    "sidebarTitle": "TIRE RETREADING SERVICE CATEGORIES",
+    "sidebar1": "Heavy Equipment Tire Retreading",
+    "sidebar2": "Heavy Transport Tire Retreading",
+    "sidebar3": "Tire Damage Repair Services",
+    "sidebar4": "Italian Imported Retreading Technology",
+    "sidebar5": "Customized Retreading Solutions",
+    "quickAccess": "QUICK ACCESS",
+    "contactSupport": "Contact Support",
+    "downloadCatalogs": "Download Catalogs",
+    "scheduleTraining": "Schedule Training",
+    "technicalResources": "TECHNICAL RESOURCES",
+    "partnershipOpportunities": "PARTNERSHIP OPPORTUNITIES"
+  },
+  "common": {
+    "phone": "1 (877) 857-3870",
+    "email": "INFO@TURTLEWAXPRO.COM",
+    "switchLanguage": "العربية"
+  },
+  "timeline": {
+    "heading": "Roadmap So Far (Historical Timeline)",
+    "1940s1950s": {
+      "year": "1940s–1950s",
+      "desc": "Tire retreading industry begins in Europe and America over 75 years ago."
+    },
+    "2004": {
+      "year": "2004",
+      "desc": "Egyptian Italian Company for Tire Retreading (E.I.R) established as an Egyptian joint-stock company, specializing in retreading tires for heavy equipment and transport vehicles."
+    },
+    "20042005": {
+      "year": "2004–2005",
+      "desc": "Company imports advanced machinery and retreading equipment from Italy to set up operations."
+    },
+    "20052010": {
+      "year": "2005–2010",
+      "desc": "Trains Egyptian technicians and engineers under supervision of Italian experts to ensure high-quality retreading standards."
+    },
+    "20102015": {
+      "year": "2010–2015",
+      "desc": "Expands services to include specialized tire repairs for punctures, cuts, and cracks."
+    },
+    "20152020": {
+      "year": "2015–2020",
+      "desc": "Focuses on modernizing technology and adopting the latest global methods in tire retreading for greater quality and efficiency."
+    },
+    "20202025": {
+      "year": "2020–2025",
+      "desc": "Develops strong reputation in Egypt as a trusted partner in heavy tire retreading and environmentally sustainable practices."
+    }
+  },
+  "whoWeAre": {
+    "title": "Who We Are",
+    "description": "Description goes here..."
+  },
+  "aboutUsPage": {
+    "heading": "About Us",
+    "subheading": "Founded in 2004, the Egyptian Italian Company specializes in retreading tires for heavy equipment and heavy transport. We combine Italian expertise with the latest technology to deliver cost-effective and environmentally friendly solutions.",
+    "storyTitle": "Our Story",
+    "storyText": "The tire retreading industry began in Europe and America more than 75 years ago. The Egyptian Italian Company is an Egyptian joint-stock company specialized in retreading tires for heavy equipment and heavy transport vehicles of all kinds. It was established in 2004. Our company works on equipping and retreading tires using the latest and best technologies available in the industry through high-quality raw materials. The company also offers a unique service for repairing all types of tire damages, such as punctures, cracks, and cuts, carried out by engineers and technicians working at the highest level and using the latest global technologies, machines, tools, and materials from the best international companies. This ensures the highest possible efficiency of retreaded tires and faster delivery times, which helps reduce operating costs, contributes to environmental protection on one hand, and reintegrates used tires into the production cycle on the other. The Italian company for tire retreading imported the factory's specialized equipment from Italy and also relied on Italian experts to train and qualify technicians in this field.",
+    "missionTitle": "Our Mission",
+    "missionText": "To deliver reliable, innovative, and environmentally responsible tire retreading services that help our clients reduce costs and minimize environmental impact.",
+    "visionTitle": "Our Vision",
+    "visionText": "To be the leading provider of tire retreading solutions in Egypt and the region, recognized for our quality, technology, and commitment to sustainability.",
+    "valuesTitle": "Our Values",
+    "values": [
+      { "title": "Quality", "desc": "We ensure the highest standards in every retreaded tire through strict quality control and premium materials." },
+      { "title": "Innovation", "desc": "We continuously adopt the latest technology and methods to deliver superior results." },
+      { "title": "Sustainability", "desc": "We are committed to protecting the environment by extending tire life and reducing waste." },
+      { "title": "Partnership", "desc": "We build long-term relationships with our clients, partners, and community based on trust and mutual success." }
+    ]
+  }
+} 
