@@ -227,11 +227,13 @@ export const ProductDetailPage = (): JSX.Element => {
                 {/* Features */}
                 <div>
                   <h2 className="text-xl font-semibold text-gray-900 mb-4">{t('productDetail.keyFeatures')}</h2>
-                  <ul className="space-y-3">
+                  <ul
+                    className={`space-y-4 list-disc ${isAr ? "pr-8" : "pl-8"}`}
+                    dir={isAr ? "rtl" : "ltr"}
+                  >
                     {product.features.map((feature, index) => (
-                      <li key={index} className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-[#1B3958] rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-gray-700">{feature}</span>
+                      <li key={index} className="text-gray-700">
+                        {feature}
                       </li>
                     ))}
                   </ul>

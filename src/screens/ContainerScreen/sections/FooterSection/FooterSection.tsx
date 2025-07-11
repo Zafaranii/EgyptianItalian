@@ -51,7 +51,7 @@ export const FooterSection = (): JSX.Element => {
           <ul className="space-y-2 text-sm text-gray-300 w-full">
             <li>
               <div className="flex items-center gap-2 mt-1">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-5 h-5">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-12 h-12">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
                   <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
                 </svg>
@@ -77,7 +77,14 @@ export const FooterSection = (): JSX.Element => {
                 <a href="mailto:eirc.retreading@gmail.com" className="text-[#6A8B9A] underline">eirc.retreading@gmail.com</a>
               </div>
             </li>
-            <li>{t('footer.hours')}</li>
+            <li>
+              <div className="flex items-center gap-2 mt-1">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-7 h-7">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>
+                <span>{t('footer.hours')}</span>
+              </div>
+            </li>
           </ul>
           {/* Social Links */}
           <div className="flex gap-4 mt-4 justify-center md:justify-end">
