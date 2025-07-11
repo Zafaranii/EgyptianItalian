@@ -6,7 +6,7 @@
     "resources": "الموارد",
     "partnerPrograms": "برامج الشركاء",
     "aboutUs": "من نحن",
-    "orderOnline": "اطلب أونلاين",
+    "orderOnline": "فرص العمل",
     "contact": "تواصل معنا"
   },
   "mainBanner": {
@@ -251,6 +251,10 @@
     "selectedFile": "الملف المحدد:",
     "submitButton": "إرسال",
     "successMessage": "تم رفع سيرتك الذاتية بنجاح!",
-    "fileTypes": "أنواع الملفات المقبولة: PDF, DOC, DOCX"
+    "fileTypes": "أنواع الملفات المقبولة: PDF, DOC, DOCX",
+    "nameLabel": "الاسم الكامل",
+    "namePlaceholder": "ادخل اسمك الكامل",
+    "jobTitleLabel": "المسمى الوظيفي",
+    "jobTitlePlaceholder": "ادخل المسمى الوظيفي الخاص بك"
   }
 } 

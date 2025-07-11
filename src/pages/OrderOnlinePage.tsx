@@ -7,6 +7,9 @@ export const OrderOnlinePage = (): JSX.Element => {
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [fileName, setFileName] = useState<string>("");
   const [success, setSuccess] = useState<boolean>(false);
+  const [name, setName] = useState('');
+  const [jobTitle, setJobTitle] = useState('');
+  const [errors, setErrors] = useState<{ name?: string; jobTitle?: string }>({});
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files && e.target.files[0]) {
@@ -17,6 +20,17 @@ export const OrderOnlinePage = (): JSX.Element => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    let newErrors: { name?: string; jobTitle?: string } = {};
+    if (!name.trim()) {
+      newErrors.name = t('uploadCV.nameRequired') || 'Required';
+    }
+    if (!jobTitle.trim()) {
+      newErrors.jobTitle = t('uploadCV.jobTitleRequired') || 'Required';
+    }
+    setErrors(newErrors);
+    if (Object.keys(newErrors).length > 0) {
+      return;
+    }
     // Here you would handle the file upload logic (e.g., send to server)
     setSuccess(true);
   };
@@ -43,6 +57,30 @@ export const OrderOnlinePage = (): JSX.Element => {
         <p className="text-lg text-gray-700 mb-8 text-center">{t('uploadCV.subtitle')}</p>
         <form className="bg-white rounded-lg shadow-md p-8 w-full max-w-md flex flex-col items-center" onSubmit={handleSubmit}>
           <div className="w-full mb-4">
+            <label className="block text-sm font-medium text-gray-700 mb-2">
+              {t('uploadCV.nameLabel')} <span className="text-red-500">*</span>
+            </label>
+            <input
+              type="text"
+              className={`w-full border border-gray-300 rounded px-3 py-2 mb-1 ${errors.name ? 'border-red-500' : ''}`}
+              placeholder={t('uploadCV.namePlaceholder')}
+              value={name}
+              onChange={e => setName(e.target.value)}
+              required
+            />
+            {errors.name && <div className="text-red-500 text-xs mb-2">{errors.name}</div>}
+            <label className="block text-sm font-medium text-gray-700 mb-2">
+              {t('uploadCV.jobTitleLabel')} <span className="text-red-500">*</span>
+            </label>
+            <input
+              type="text"
+              className={`w-full border border-gray-300 rounded px-3 py-2 mb-1 ${errors.jobTitle ? 'border-red-500' : ''}`}
+              placeholder={t('uploadCV.jobTitlePlaceholder')}
+              value={jobTitle}
+              onChange={e => setJobTitle(e.target.value)}
+              required
+            />
+            {errors.jobTitle && <div className="text-red-500 text-xs mb-2">{errors.jobTitle}</div>}
             <label className="block text-sm font-medium text-gray-700 mb-2">{t('uploadCV.fileInputLabel')}</label>
             <input
               type="file"

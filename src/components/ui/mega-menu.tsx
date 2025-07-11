@@ -59,7 +59,7 @@ export const MegaMenu = ({ isVisible, hoveredItem }: MegaMenuProps): JSX.Element
             },
             {
               name: t('megaMenu.service4'),
-              image: "/images/sub/Tire Repair/b0cedb89-0fb4-407d-aefe-9d9f5318ad39.jpg",
+              image: "/images/sub/Tire Repair/DSC_5660.JPG",
               icon: <FaWrench />,
               link: "/products/tire-repair",
               desc: t('megaMenu.serviceCard4Desc'),

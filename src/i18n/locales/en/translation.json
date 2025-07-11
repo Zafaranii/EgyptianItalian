@@ -6,7 +6,7 @@
     "resources": "Resources",
     "partnerPrograms": "Partner Programs",
     "aboutUs": "About Us",
-    "orderOnline": "Hiring Request",
+    "orderOnline": "Jobs",
     "contact": "Contact"
   },
   "mainBanner": {
@@ -63,7 +63,7 @@
     "aboutUs": "About Us",
     "products": "Products",
     "services": "Services",
-    "partnerPrograms": "Hiring Request",
+    "partnerPrograms": "Jobs",
     "uploadCv": "Upload Your CV",
     "contact": "Contact",
     "contactInfo": "Contact Information",
@@ -148,7 +148,11 @@
     "selectedFile": "Selected file:",
     "submitButton": "Submit",
     "successMessage": "Your CV has been uploaded successfully!",
-    "fileTypes": "Accepted file types: PDF, DOC, DOCX"
+    "fileTypes": "Accepted file types: PDF, DOC, DOCX",
+    "nameLabel": "Full Name",
+    "namePlaceholder": "Enter your full name",
+    "jobTitleLabel": "Job Title",
+    "jobTitlePlaceholder": "Enter your job title"
   },
   "timeline": {
     "heading": "Roadmap So Far (Historical Timeline)",
