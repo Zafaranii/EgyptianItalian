@@ -69,8 +69,8 @@ export const ProductDetailPage = (): JSX.Element => {
       title: t('megaMenu.service4'),
       description: t('megaMenu.serviceCard4Desc'),
       images: [
-        '/images/sub/Tire Repair/b0cedb89-0fb4-407d-aefe-9d9f5318ad39.jpg',
         '/images/sub/Tire Repair/DSC_5660.JPG',
+        '/images/sub/Tire Repair/b0cedb89-0fb4-407d-aefe-9d9f5318ad39.jpg',
         '/images/sub/Tire Repair/1582107224622.jpg'
       ],
       features: t('productDetail.features.tireRepair', { returnObjects: true }) as string[]

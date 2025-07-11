@@ -31,7 +31,7 @@ export const ProductsPage = (): JSX.Element => {
     {
       id: 'tire-repair',
       name: t('megaMenu.service4'),
-      image: "/images/sub/Tire Repair/b0cedb89-0fb4-407d-aefe-9d9f5318ad39.jpg",
+      image: "/images/sub/Tire Repair/DSC_5660.JPG",
       desc: t('megaMenu.serviceCard4Desc'),
     }
   ];
