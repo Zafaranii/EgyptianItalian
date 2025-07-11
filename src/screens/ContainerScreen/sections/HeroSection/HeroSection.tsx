@@ -13,32 +13,27 @@ export const HeroSection = (): JSX.Element => {
   // Why Choose Us feature cards data
   const features = [
     {
-      icon: <FaRegHandshake size={36} color="#00824a" />,
+      icon: <FaRegHandshake size={36} color="#6A8B9A" />,
       title: t('whyChoose.experienceTitle'),
       desc: t('whyChoose.experienceDesc'),
     },
     {
-      icon: <GiGearHammer size={36} color="#00824a" />,
-      title: t('whyChoose.italianTechTitle'),
-      desc: t('whyChoose.italianTechDesc'),
-    },
-    {
-      icon: <FaMoneyBillWave size={36} color="#00824a" />,
+      icon: <FaMoneyBillWave size={36} color="#6A8B9A" />,
       title: t('whyChoose.costSavingsTitle'),
       desc: t('whyChoose.costSavingsDesc'),
     },
     {
-      icon: <FaLeaf size={36} color="#00824a" />,
+      icon: <FaLeaf size={36} color="#6A8B9A" />,
       title: t('whyChoose.environmentTitle'),
       desc: t('whyChoose.environmentDesc'),
     },
     {
-      icon: <MdVerified size={36} color="#00824a" />,
+      icon: <MdVerified size={36} color="#6A8B9A" />,
       title: t('whyChoose.qualityTitle'),
       desc: t('whyChoose.qualityDesc'),
     },
     {
-      icon: <MdSpeed size={36} color="#00824a" />,
+      icon: <MdSpeed size={36} color="#6A8B9A" />,
       title: t('whyChoose.fastTurnaroundTitle'),
       desc: t('whyChoose.fastTurnaroundDesc'),
     },
@@ -46,7 +41,7 @@ export const HeroSection = (): JSX.Element => {
 
   return (
     <section className="w-full py-24 relative bg-cover bg-center bg-no-repeat" style={{
-      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/CD/one.JPG')`
+      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/social/whychoose.JPG')`
     }}>
       <div className="container mx-auto px-4">
         <h2 className="text-[37px] text-center text-white font-normal [font-family:'Inter',Helvetica] leading-[43.9px] mb-12">

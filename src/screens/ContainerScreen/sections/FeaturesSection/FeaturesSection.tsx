@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 // import { Input } from "../../../../components/ui/input";
 import { Separator } from "../../../../components/ui/separator";
@@ -8,10 +8,15 @@ import { LanguageToggle } from "../../../../components/ui/language-toggle";
 
 export const FeaturesSection = (): JSX.Element => {
   const navigate = useNavigate();
+  const location = useLocation();
   const { t, i18n } = useTranslation();
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
   const [showMegaMenu, setShowMegaMenu] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  // Check if current route is a product page
+  const isProductPage = location.pathname === '/products' || location.pathname.startsWith('/products/');
+  const isProductDetailPage = location.pathname.startsWith('/products/') && location.pathname !== '/products';
 
   // Navigation menu items data with routes - reverse array for Arabic to ensure proper RTL order
   const navItems = useMemo(() => {
@@ -25,12 +30,23 @@ export const FeaturesSection = (): JSX.Element => {
     return i18n.language === 'ar' ? [...baseNavItems].reverse() : baseNavItems;
   }, [i18n.language, t]);
 
-  // Reset hover states when language changes
+  // Check if a nav item is currently active based on route
+  const isActiveItem = (item: any) => {
+    if (item.route === "/") {
+      return location.pathname === "/";
+    } else if (item.route === "/products") {
+      return isProductPage;
+    } else {
+      return location.pathname === item.route;
+    }
+  };
+
+  // Reset hover states when language changes or route changes
   useEffect(() => {
     setHoveredItem(null);
     setShowMegaMenu(false);
     setIsMobileMenuOpen(false);
-  }, [i18n.language]);
+  }, [i18n.language, location.pathname]);
 
   const handleNavClick = (route: string) => {
     navigate(route);
@@ -38,6 +54,16 @@ export const FeaturesSection = (): JSX.Element => {
   };
 
   const handleNavMouseEnter = (item: any) => {
+    // Disable mega menu on product pages, but allow highlighting on product detail pages
+    if (isProductPage && item.hasMegaMenu) {
+      if (isProductDetailPage) {
+        // On product detail pages, highlight the products button but don't show mega menu
+        setHoveredItem(item.text);
+        setShowMegaMenu(false);
+      }
+      return;
+    }
+    
     setHoveredItem(item.text);
     if (item.hasMegaMenu) {
       setShowMegaMenu(true);
@@ -71,7 +97,7 @@ export const FeaturesSection = (): JSX.Element => {
               onClick={() => navigate('/')}
             >
               <img className="w-[90px] h-[66px] md:w-[150px] md:h-[66px] lg:w-[220px] lg:h-[66px] object-cover" alt="Logo" src="/images/logos/eir.png" />
-            </div>
+              </div>
 
             {/* Desktop Language Toggle */}
             <div className="hidden md:block">
@@ -83,7 +109,7 @@ export const FeaturesSection = (): JSX.Element => {
               <LanguageToggle />
               <button
                 onClick={toggleMobileMenu}
-                className="p-2 rounded-md text-gray-600 hover:text-[#00824a] hover:bg-gray-100 transition-colors"
+                className="p-2 rounded-md text-gray-600 hover:text-[#1B3958] hover:bg-gray-100 transition-colors"
                 aria-label="Toggle mobile menu"
               >
                 <svg
@@ -114,41 +140,48 @@ export const FeaturesSection = (): JSX.Element => {
 
           {/* Desktop Main navigation */}
           <div className={`hidden md:flex h-[60px] mt-auto justify-center border-b border-gray-200 shadow-sm mb-2 ${i18n.language === 'ar' ? 'flex-row-reverse' : ''}`}>
-            {navItems.map((item, index) => (
-              <React.Fragment key={`${i18n.language}-navitem-${index}`}>
-                {index > 0 && (
-                  <div
-                    className="w-px h-[45px] my-0.5"
-                    style={{
-                      background: 'linear-gradient(to bottom, transparent, rgba(75, 85, 99, 0.5))'
-                    }}
-                  />
-                )}
-                <div 
-                  className={`w-full md:w-[248px] h-[60px] border-b-2 relative cursor-pointer transition-all duration-300 flex items-center justify-center ${
-                    hoveredItem === item.text 
-                      ? 'border-[#00824a] bg-gradient-to-t from-[#00824a]/10 to-transparent' 
-                      : 'border-white hover:border-[#00824a]/50 hover:bg-gradient-to-t hover:from-[#00824a]/5 hover:to-transparent'
-                  }`}
-                  onMouseEnter={() => handleNavMouseEnter(item)}
-                  onClick={() => handleNavClick(item.route)}
-                >
-                  <div
-                    className={`font-['Inter',Helvetica] font-normal text-[13px] text-center tracking-[0.75px] leading-[15.8px] whitespace-nowrap transition-colors duration-300 ${
-                      hoveredItem === item.text 
-                        ? 'text-[#00824a] font-semibold' 
-                        : 'text-[#545859] hover:text-[#00824a]'
-                    }`}
-                  >
-                    {item.text}
-                  </div>
-                  {/* Active indicator */}
-                  {hoveredItem === item.text && (
-                    <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-[#00824a] rounded-t-full transition-all duration-300"></div>
+            {navItems.map((item, index) => {
+              const isActive = isActiveItem(item);
+              const isHovered = hoveredItem === item.text;
+              
+              return (
+                <React.Fragment key={`${i18n.language}-navitem-${index}`}>
+                  {index > 0 && (
+                    <div
+                      className="w-px h-[45px] my-0.5"
+                      style={{
+                        background: 'linear-gradient(to bottom, transparent, rgba(75, 85, 99, 0.5))'
+                      }}
+                    />
                   )}
-                </div>
-              </React.Fragment>
-            ))}
+                  <div 
+                    className={`w-full md:w-[248px] h-[60px] border-b-2 relative cursor-pointer transition-all duration-300 flex items-center justify-center ${
+                      isActive || isHovered
+                        ? 'border-[#1B3958] bg-gradient-to-t from-[#1B3958]/10 to-transparent' 
+                        : 'border-white hover:border-[#1B3958]/50 hover:bg-gradient-to-t hover:from-[#1B3958]/5 hover:to-transparent'
+                    } ${
+                      isProductPage && item.hasMegaMenu && !isProductDetailPage ? 'pointer-events-none opacity-50' : ''
+                    }`}
+                    onMouseEnter={() => handleNavMouseEnter(item)}
+                    onClick={() => handleNavClick(item.route)}
+                  >
+                    <div
+                      className={`font-['Inter',Helvetica] font-normal text-[13px] text-center tracking-[0.75px] leading-[15.8px] whitespace-nowrap transition-colors duration-300 ${
+                        isActive || isHovered
+                          ? 'text-[#1B3958] font-semibold' 
+                          : 'text-[#545859] hover:text-[#1B3958]'
+                      }`}
+                    >
+                      {item.text}
+                    </div>
+                    {/* Active indicator */}
+                    {(isActive || isHovered) && (
+                      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-[#1B3958] rounded-t-full transition-all duration-300"></div>
+                    )}
+                  </div>
+                </React.Fragment>
+              );
+            })}
             <div
               className="w-px h-[45px] my-0.5"
               style={{
@@ -161,7 +194,7 @@ export const FeaturesSection = (): JSX.Element => {
         {/* Mega Menu - Desktop Only */}
         <div className="hidden md:block">
           <MegaMenu
-            isVisible={showMegaMenu}
+            isVisible={showMegaMenu && !isProductPage}
             hoveredItem={hoveredItem}
           />
         </div>
@@ -172,22 +205,30 @@ export const FeaturesSection = (): JSX.Element => {
         <div className="block md:hidden w-full bg-white shadow-lg animate-slide-down z-50">
           <nav className="px-4 py-2">
             <ul className="space-y-1">
-              {navItems.map((item, index) => (
-                <li key={`mobile-${i18n.language}-navitem-${index}`}>
-                  <button
-                    onClick={() => handleNavClick(item.route)}
-                    className={`w-full text-left px-4 py-3 rounded-md transition-colors duration-200 font-medium ${
-                      hoveredItem === item.text
-                        ? 'bg-[#00824a] text-white'
-                        : 'text-[#545859] hover:bg-gray-100 hover:text-[#00824a]'
-                    }`}
-                    onMouseEnter={() => setHoveredItem(item.text)}
-                    onMouseLeave={() => setHoveredItem(null)}
-                  >
-                    {item.text}
-                  </button>
-                </li>
-              ))}
+              {navItems.map((item, index) => {
+                const isActive = isActiveItem(item);
+                const isHovered = hoveredItem === item.text;
+                
+                return (
+                  <li key={`mobile-${i18n.language}-navitem-${index}`}>
+                    <button
+                      onClick={() => handleNavClick(item.route)}
+                      className={`w-full text-left px-4 py-3 rounded-md transition-colors duration-200 font-medium ${
+                        isActive || isHovered
+                          ? 'bg-[#1B3958] text-white'
+                          : 'text-[#545859] hover:bg-gray-100 hover:text-[#1B3958]'
+                      } ${
+                        isProductPage && item.hasMegaMenu && !isProductDetailPage ? 'opacity-50 cursor-not-allowed' : ''
+                      }`}
+                      onMouseEnter={() => !isProductPage && setHoveredItem(item.text)}
+                      onMouseLeave={() => setHoveredItem(null)}
+                      disabled={isProductPage && item.hasMegaMenu && !isProductDetailPage}
+                    >
+                      {item.text}
+                    </button>
+                  </li>
+                );
+              })}
             </ul>
           </nav>
         </div>

@@ -1,25 +1,30 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState } from "react";
 
 export const SlideshowSection = (): JSX.Element => {
-  // Slideshow images and titles
-  const slideshowData = [{image: "/images/CD/home.jpg"}];
+  const [imageLoaded, setImageLoaded] = useState(false);
 
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
-
-   const goToSlide = (idx: number) => {
-    setCurrentSlide(idx);
-  }; 
+  const handleImageLoad = () => {
+    setImageLoaded(true);
+  };
 
   return (
-    <div className="w-full max-w-full mb-10 overflow-x-hidden">
-      <div className="relative w-full max-w-full h-[260px] md:h-[450px] lg:h-[600px] overflow-hidden">
-        <img
-          src={slideshowData[currentSlide].image}
-          alt={`Slideshow ${currentSlide + 1}`}
-          className="w-full max-w-full h-full object-cover transition-all duration-700 mx-auto"
-        />
-      </div>
+    <div className="w-full max-w-full mb-10 overflow-hidden">
+<div className="w-full max-w-full mb-10 overflow-hidden">
+  <img
+    src="/images/social/home.jpg"
+    alt="Egyptian Italian Retreading Company"
+    className={`w-full h-auto transition-all duration-700 ${
+      imageLoaded ? 'opacity-100' : 'opacity-0'
+    }`}
+    loading="lazy"
+    onLoad={handleImageLoad}
+  />
+  {!imageLoaded && (
+    <div className="absolute inset-0 bg-gray-200 animate-pulse flex items-center justify-center">
+      <div className="w-8 h-8 border-4 border-[#1B3958] border-t-transparent rounded-full animate-spin"></div>
+    </div>
+  )}
+</div>
     </div>
   );
 }; 

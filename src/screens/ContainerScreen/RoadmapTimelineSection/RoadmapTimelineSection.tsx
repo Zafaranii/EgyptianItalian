@@ -40,14 +40,14 @@ export const RoadmapTimelineSection = (): JSX.Element => {
   return (
     <section className="w-full py-20 bg-white">
       <div className="container mx-auto px-4 max-w-3xl">
-        <h2 className="text-3xl md:text-4xl font-bold text-[#00824a] text-center mb-10 flex items-center justify-center gap-2">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#1B3958] text-center mb-10 flex items-center justify-center gap-2">
           <span className="text-2xl">✅</span> {t("timeline.heading")}
         </h2>
         <div className={`flex flex-col gap-0 ${isAr ? "rtl" : "ltr"}`}>
           {timeline.map((item, idx) => (
             <React.Fragment key={item.year}>
               <div className="flex flex-col md:flex-row items-start md:items-center mb-2">
-                <div className="min-w-[120px] text-lg md:text-xl font-semibold text-[#00824a] text-center md:text-left mb-1 md:mb-0 md:mr-6 md:ml-0 ml-0" style={isAr ? {textAlign: 'right'} : {}}>
+                <div className="min-w-[120px] text-lg md:text-xl font-semibold text-[#1B3958] text-center md:text-left mb-1 md:mb-0 md:mr-6 md:ml-0 ml-0" style={isAr ? {textAlign: 'right'} : {}}>
                   {t(item.year)}
                 </div>
                 <div className="flex-1 text-base md:text-lg text-gray-800" style={isAr ? {textAlign: 'right'} : {}}>

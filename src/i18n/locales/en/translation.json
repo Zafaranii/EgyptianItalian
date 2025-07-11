@@ -20,14 +20,7 @@
     "italianTech": "Italian Imported Retreading Technology",
     "customized": "Customized Retreading Solutions"
   },
-  "sidebar": {
-    "title": "TIRE RETREADING SERVICE CATEGORIES",
-    "heavyEquipment": "Tire Retreading for Heavy Equipment",
-    "heavyTransport": "Tire Retreading for Heavy Transport",
-    "damageRepairs": "Tire Damage Repairs (Punctures, Cuts, Cracks)",
-    "sustainability": "Environmental Sustainability Solutions",
-    "italianTech": "Italian Technology & Equipment"
-  },
+
   "productCards": {
     "heavyEquipment": {
       "title": "Heavy Equipment Retreading",
@@ -38,8 +31,8 @@
       "desc": "Retreading services for trucks and trailers to reduce costs and preserve the environment."
     },
     "damageRepairs": {
-      "title": "Tire Damage Repairs",
-      "desc": "Specialized repair of punctures, cuts, and cracks by skilled technicians."
+      "title": "Cast Tire Renewal",
+      "desc": "Renewing cast tires helps preserve the internal material of the tire (foam), which saves the high cost of injecting a new tire with this material."
     },
     "italianTech": {
       "title": "Italian Technology",
@@ -77,7 +70,7 @@
     "address": "Address: 26th kilometer Alexandria-Cairo Desert Road, Al-Ameriya - Alexandria",
     "phone": "Phone:",
     "email": "Email:",
-    "hours": "Working Hours: Sat – Thu | 9 AM – 5 PM",
+    "hours": "Working Hours: Sun – Thu | 8:30 AM – 5 PM",
     "environmentTitle": "Environmental Message",
     "environmentMsg": "We're committed to sustainability by extending tire life and reducing environmental impact through advanced retreading processes.",
     "copyright": "© 2025 Egyptian Italian Retreading Company. All rights reserved.",
@@ -107,19 +100,13 @@
     "service1": "Heavy Equipment Tire Retreading",
     "service2": "Heavy Transport Tire Retreading",
     "service3": "Tire Damage Repair Services",
-    "service4": "Italian Imported Retreading Technology",
+    "service4": "Tire Repair",
     "service5": "Customized Retreading Solutions",
     "serviceCard1Desc": "High-quality retreading for loaders, excavators, and other heavy machinery using advanced Italian technology.",
     "serviceCard2Desc": "Retreading services for trucks and trailers to reduce costs and preserve the environment.",
-    "serviceCard3Desc": "Specialized repair of punctures, cuts, and cracks by skilled technicians.",
-    "serviceCard4Desc": "Advanced machinery and techniques imported from Italy for superior retreading results.",
+    "serviceCard3Desc": "Renewing cast tires helps preserve the internal material of the tire (foam), which saves the high cost of injecting a new tire with this material.",
+    "serviceCard4Desc": "We repair all tires of heavy equipment and heavy transport",
     "serviceCard5Desc": "Tailored retreading solutions to meet unique client needs and applications.",
-    "sidebarTitle": "TIRE RETREADING SERVICE CATEGORIES",
-    "sidebar1": "Heavy Equipment Tire Retreading",
-    "sidebar2": "Heavy Transport Tire Retreading",
-    "sidebar3": "Tire Damage Repair Services",
-    "sidebar4": "Italian Imported Retreading Technology",
-    "sidebar5": "Customized Retreading Solutions",
     "quickAccess": "QUICK ACCESS",
     "contactSupport": "Contact Support",
     "downloadCatalogs": "Download Catalogs",
@@ -130,7 +117,38 @@
   "common": {
     "phone": "1 (877) 857-3870",
     "email": "INFO@TURTLEWAXPRO.COM",
-    "switchLanguage": "العربية"
+    "switchLanguage": "العربية",
+    "learnMore": "Learn More"
+  },
+  "qa": {
+    "title": "Frequently Asked Questions",
+    "questions": [
+      {
+        "question": "Why do we retread the tire?",
+        "answer": "The retreaded tire is safe, highly efficient, and environmentally friendly because retreading gives a new lifespan to the worn-out tire, as the worn tread is replaced with a new tread, which means a new lifespan for the used tire."
+      },
+      {
+        "question": "Where do the torn tires that you find on highways come from?",
+        "answer": "The pieces of torn tires found lying on highways come from new tires, not retreaded ones, because the proportion of retreaded tires in the Egyptian market does not exceed 0.005% of new tires. Most torn tires on the sides of highways come from the tires of heavy transport vehicles, due to: 1- Not adjusting the air pressure in the tires 2- Excessive loads on transport vehicles."
+      },
+      {
+        "question": "What is the lifespan of a retreaded tire?",
+        "answer": "With regular maintenance and monitoring of tire air pressure, the lifespan of the retreaded tire is the same as that of a new tire under the same usage conditions for the vehicle (transport and equipment)."
+      },
+      {
+        "question": "What is a used tire suitable for retreading?",
+        "answer": "For transport vehicle tires, the tread depth must not be less than 2 mm before the tread rubber wears down to the steel belt. After that, the tire is inspected by a company technician to determine its suitability for retreading."
+      }
+    ]
+  },
+  "uploadCV": {
+    "title": "Upload Your CV",
+    "subtitle": "Submit your resume to join our team!",
+    "fileInputLabel": "Choose File",
+    "selectedFile": "Selected file:",
+    "submitButton": "Submit",
+    "successMessage": "Your CV has been uploaded successfully!",
+    "fileTypes": "Accepted file types: PDF, DOC, DOCX"
   },
   "timeline": {
     "heading": "Roadmap So Far (Historical Timeline)",
@@ -183,5 +201,65 @@
       { "title": "Sustainability", "desc": "We are committed to protecting the environment by extending tire life and reducing waste." },
       { "title": "Partnership", "desc": "We build long-term relationships with our clients, partners, and community based on trust and mutual success." }
     ]
+  },
+  "contactForm": {
+    "title": "Send us a Message",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "phone": "Phone",
+    "company": "Company",
+    "message": "Message",
+    "firstNamePlaceholder": "Your first name",
+    "lastNamePlaceholder": "Your last name",
+    "emailPlaceholder": "your.email@example.com",
+    "phonePlaceholder": "Your phone number",
+    "companyPlaceholder": "Your company name",
+    "messagePlaceholder": "Tell us how we can help you...",
+    "sendButton": "Send Message"
+  },
+  "productDetail": {
+    "keyFeatures": "Key Features",
+    "specifications": "Specifications",
+    "getQuote": "Get Quote",
+    "productNotFound": "Product Not Found",
+    "backToProducts": "Back to Products",
+    "features": {
+      "heavyEquipment": [
+        "High-quality retreading for loaders and excavators",
+        "Advanced Italian technology and equipment",
+        "Extended tire life and cost savings",
+        "Environmentally friendly process",
+        "Skilled technicians and quality assurance"
+      ],
+      "heavyTransport": [
+        "Retreading services for trucks and trailers",
+        "Cost-effective alternative to new tires",
+        "Environmental sustainability focus",
+        "Quality control and testing",
+        "Fast turnaround times"
+      ],
+      "tireDamageRepairs": [
+        "Renewing cast tires preserves internal tire material",
+        "Cost savings on new tire injection",
+        "Advanced renewal techniques and materials",
+        "Quality assurance and testing",
+        "Quick renewal turnaround"
+      ],
+      "tireRepair": [
+        "Repair of punctures and surface cuts",
+        "Repair and renewal of the tire sidewall",
+        "Repair of the tire rim edge (bead)",
+        "Repair of punctures",
+        "Repair of surface cuts whether on the sidewalls or the tread"
+      ],
+      "customizedRetreading": [
+        "Customized solutions for specific needs",
+        "Client consultation and planning",
+        "Specialized equipment and techniques",
+        "Quality control and testing",
+        "Ongoing support and maintenance"
+      ]
+    }
   }
 } 

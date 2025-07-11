@@ -1,37 +1,33 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 import { FaTools, FaTruck, FaWrench, FaFlag, FaCog } from "react-icons/fa";
+
+interface MenuData {
+  sections: {
+    title: string;
+    items: {
+      name: string;
+      image: string;
+      icon: JSX.Element;
+      link: string;
+      desc: string;
+    }[];
+  }[];
+  categories: {
+    title: string;
+    items: string[];
+  }[];
+}
 
 interface MegaMenuProps {
   isVisible: boolean;
   hoveredItem: string | null;
 }
 
-interface MenuItem {
-  name: string;
-  image: string;
-  icon: React.ReactNode;
-  link: string;
-  desc?: string;
-}
-
-interface MenuSection {
-  title: string;
-  items: MenuItem[];
-}
-
-interface CategoryItem {
-  title: string;
-  items: string[];
-}
-
-interface MenuData {
-  sections: MenuSection[];
-  categories?: CategoryItem[];
-}
-
 export const MegaMenu = ({ isVisible, hoveredItem }: MegaMenuProps): JSX.Element => {
   const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
 
   // Tire retreading services data
   const productCategories: Record<string, MenuData> = {
@@ -42,61 +38,43 @@ export const MegaMenu = ({ isVisible, hoveredItem }: MegaMenuProps): JSX.Element
           items: [
             {
               name: t('megaMenu.service1'),
-              image: "/images/CD/seven.JPG",
+              image: "/images/sub/Heavy Equipment Tire Retreading/IMG_20180227_102944 (2).jpg",
               icon: <FaTools />,
               link: "/products/heavy-equipment-retreading",
               desc: t('megaMenu.serviceCard1Desc'),
             },
             {
               name: t('megaMenu.service2'),
-              image: "/images/CD/eight.JPG",
+              image: "/images/sub/Heavy Transport Tire Retreading/IMG_20190722_132024.jpg",
               icon: <FaTruck />,
               link: "/products/heavy-transport-retreading",
               desc: t('megaMenu.serviceCard2Desc'),
             },
             {
               name: t('megaMenu.service3'),
-              image: "/images/CD/nine.JPG",
+              image: "/images/sub/Tire Damage Repair Services/IMG_20200226_104621.jpg",
               icon: <FaWrench />,
               link: "/products/tire-damage-repairs",
               desc: t('megaMenu.serviceCard3Desc'),
             },
             {
               name: t('megaMenu.service4'),
-              image: "/images/CD/ten.JPG",
-              icon: <FaFlag />,
-              link: "/products/italian-technology",
+              image: "/images/sub/Tire Repair/b0cedb89-0fb4-407d-aefe-9d9f5318ad39.jpg",
+              icon: <FaWrench />,
+              link: "/products/tire-repair",
               desc: t('megaMenu.serviceCard4Desc'),
-            },
-            {
-              name: t('megaMenu.service5'),
-              image: "/images/CD/eleven.JPG",
-              icon: <FaCog />,
-              link: "/products/customized-retreading",
-              desc: "",
-            },
+            }
           ],
         },
       ],
-      categories: [
-        {
-          title: t('megaMenu.sidebarTitle'),
-          items: [
-            t('megaMenu.sidebar1'),
-            t('megaMenu.sidebar2'),
-            t('megaMenu.sidebar3'),
-            t('megaMenu.sidebar4'),
-            t('megaMenu.sidebar5'),
-          ],
-        },
-      ],
+      categories: [],
     },
   };
 
   const currentMenu = hoveredItem && productCategories[hoveredItem as keyof typeof productCategories];
 
   const handleItemClick = (link: string) => {
-    window.location.href = link;
+    navigate(link);
   };
 
   if (!isVisible || !currentMenu) {
@@ -105,12 +83,12 @@ export const MegaMenu = ({ isVisible, hoveredItem }: MegaMenuProps): JSX.Element
 
   return (
     <div 
-      className={`absolute top-[147px] w-full bg-white shadow-2xl border-t-4 border-[#00824a] z-50 min-h-[600px] ${i18n.language === 'ar' ? 'right-0' : 'left-0'}`}
+      className={`absolute top-[147px] w-full bg-white shadow-2xl border-t-4 border-[#1B3958] z-50 min-h-[300px] ${i18n.language === 'ar' ? 'right-0' : 'left-0'}`}
     >
       <div className="max-w-[1495px] mx-auto px-4 py-8">
         <div className="grid grid-cols-12 gap-8">
-          {/* Left side - Featured products/main content */}
-          <div className="col-span-8">
+          {/* Main content */}
+          <div className="col-span-12">
             {/* SEE ALL CAR WASH CHEMICALS section */}
             {hoveredItem === "PRODUCTS" && (
               <div className="flex gap-8 mb-8">
@@ -153,6 +131,7 @@ export const MegaMenu = ({ isVisible, hoveredItem }: MegaMenuProps): JSX.Element
                                 src={item.image}
                                 alt={item.name}
                                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                                loading="lazy"
                               />
                               <div className="absolute inset-0 bg-black/20"></div>
                               <div className="absolute top-2 right-2 text-white text-2xl">
@@ -193,6 +172,7 @@ export const MegaMenu = ({ isVisible, hoveredItem }: MegaMenuProps): JSX.Element
                               src={item.image}
                               alt={item.name}
                               className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                              loading="lazy"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                             <div className="absolute top-2 right-2 text-white text-xl">
@@ -213,37 +193,7 @@ export const MegaMenu = ({ isVisible, hoveredItem }: MegaMenuProps): JSX.Element
             )}
           </div>
 
-          {/* Right side - Categories */}
-          <div className="col-span-4 bg-gray-50 rounded-lg p-6">
-            {hoveredItem === "PRODUCTS" && 'categories' in currentMenu && currentMenu.categories && (
-              <>
-                <h3 className="text-sm font-bold text-gray-800 mb-6 tracking-wider">
-                  CAR WASH CHEMICAL CATEGORIES
-                </h3>
-                <div className="space-y-6">
-                  {currentMenu.categories.map((category: CategoryItem, categoryIndex: number) => (
-                    <div key={categoryIndex}>
-                      <h4 className="text-sm font-semibold text-[#00824a] mb-3 tracking-wider">
-                        {category.title}
-                      </h4>
-                      <div className="space-y-2">
-                        {category.items.map((item: string, itemIndex: number) => (
-                          <div 
-                            key={itemIndex}
-                            className="text-sm text-gray-600 hover:text-[#00824a] cursor-pointer transition-colors duration-200 pl-2 border-l-2 border-transparent hover:border-[#00824a]"
-                          >
-                            {item}
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </>
-            )}
-            {/* For other menu items, show related info */}
-            {/* Quick Access section removed */}
-          </div>
+
         </div>
       </div>
     </div>
