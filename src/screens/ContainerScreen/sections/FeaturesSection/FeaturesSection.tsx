@@ -24,6 +24,7 @@ export const FeaturesSection = (): JSX.Element => {
       { text: t('navigation.home'), position: "left-[100px]", route: "/", hasMegaMenu: false },
       { text: t('navigation.products'), position: "left-[83px]", route: "/products", hasMegaMenu: true },
       { text: t('navigation.aboutUs'), position: "left-[86px]", route: "/about-us", hasMegaMenu: false },
+      { text: t('navigation.faqs'), position: "left-[86px]", route: "/faqs", hasMegaMenu: false },
       { text: t('navigation.orderOnline'), position: "left-[68px]", route: "/order-online", hasMegaMenu: false },
       { text: t('navigation.contact'), position: "left-[89px]", route: "/contact", hasMegaMenu: false },
     ];

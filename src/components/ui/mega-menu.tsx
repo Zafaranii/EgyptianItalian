@@ -38,7 +38,7 @@ export const MegaMenu = ({ isVisible, hoveredItem }: MegaMenuProps): JSX.Element
           items: [
             {
               name: t('megaMenu.service1'),
-              image: "/images/sub/Heavy Equipment Tire Retreading/IMG_20180227_102944 (2).jpg",
+              image: "/images/sub/Heavy Equipment Tire Retreading/DSC_5673.JPG",
               icon: <FaTools />,
               link: "/products/heavy-equipment-retreading",
               desc: t('megaMenu.serviceCard1Desc'),

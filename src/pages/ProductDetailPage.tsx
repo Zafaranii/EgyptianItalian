@@ -30,11 +30,8 @@ export const ProductDetailPage = (): JSX.Element => {
       title: t('megaMenu.service1'),
       description: t('megaMenu.serviceCard1Desc'),
       images: [
-        '/images/sub/Heavy Equipment Tire Retreading/IMG_20180227_102944 (2).jpg',
-        '/images/sub/Heavy Equipment Tire Retreading/94f5e989-0826-4065-976a-2cdbf946c0c4.jpg',
-        '/images/sub/Heavy Equipment Tire Retreading/31590604_1872536812765542_3540932641261879296_n.jpg',
-        '/images/sub/Heavy Equipment Tire Retreading/2dfdb831-0c73-45f4-a1a8-8e93f9cbf9ec.jpg',
-        '/images/sub/Heavy Equipment Tire Retreading/1543840495288.jpg',
+        '/images/sub/Heavy Equipment Tire Retreading/DSC_5673.JPG',
+        '/images/sub/Heavy Equipment Tire Retreading/DSC_5669.JPG',
         '/images/sub/Heavy Equipment Tire Retreading/1519821188681.jpg'
       ],
       features: t('productDetail.features.heavyEquipment', { returnObjects: true }) as string[]
@@ -45,10 +42,7 @@ export const ProductDetailPage = (): JSX.Element => {
       description: t('megaMenu.serviceCard2Desc'),
       images: [
         '/images/sub/Heavy Transport Tire Retreading/IMG_20190722_132024.jpg',
-        '/images/sub/Heavy Transport Tire Retreading/IMG_20190722_131920.jpg',
-        '/images/sub/Heavy Transport Tire Retreading/3a43bcdf-a4a4-4d0e-95d0-f6e9e91dd03b.jpg',
-        '/images/sub/Heavy Transport Tire Retreading/82de0a7d-fd5d-4c50-9bef-6c7b1c929969.jpg',
-        '/images/sub/Heavy Transport Tire Retreading/09731885-a199-4ffc-99a2-65b61ecfcda7.jpg'
+        '/images/sub/Heavy Transport Tire Retreading/IMG_20190722_131920.jpg'
       ],
       features: t('productDetail.features.heavyTransport', { returnObjects: true }) as string[]
     },
@@ -58,9 +52,7 @@ export const ProductDetailPage = (): JSX.Element => {
       description: t('megaMenu.serviceCard3Desc'),
       images: [
         '/images/sub/Tire Damage Repair Services/IMG_20200226_104621.jpg',
-        '/images/sub/Tire Damage Repair Services/1562750072627.jpg',
-        '/images/sub/Tire Damage Repair Services/1562750038096.jpg',
-        '/images/sub/Tire Damage Repair Services/1518947061509.jpg'
+        '/images/sub/Tire Damage Repair Services/1562750072627.jpg'
       ],
       features: t('productDetail.features.tireDamageRepairs', { returnObjects: true }) as string[]
     },
@@ -69,9 +61,7 @@ export const ProductDetailPage = (): JSX.Element => {
       title: t('megaMenu.service4'),
       description: t('megaMenu.serviceCard4Desc'),
       images: [
-        '/images/sub/Tire Repair/DSC_5660.JPG',
-        '/images/sub/Tire Repair/b0cedb89-0fb4-407d-aefe-9d9f5318ad39.jpg',
-        '/images/sub/Tire Repair/1582107224622.jpg'
+        '/images/sub/Tire Repair/DSC_5660.JPG'
       ],
       features: t('productDetail.features.tireRepair', { returnObjects: true }) as string[]
     },

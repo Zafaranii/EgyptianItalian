@@ -12,6 +12,7 @@ export const FooterSection = (): JSX.Element => {
     { to: "/", label: t('footer.home') },
     { to: "/about-us", label: t('footer.aboutUs') },
     { to: "/products", label: t('footer.products') },
+    { to: "/faqs", label: t('footer.faqs') },
     { to: "/order-online", label: t('footer.partnerPrograms') },
     { to: "/contact", label: t('footer.contact') },
   ];

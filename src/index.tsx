@@ -8,6 +8,7 @@ import { ProductDetailPage } from "./pages/ProductDetailPage";
 import { ResourcesPage } from "./pages/ResourcesPage";
 import { PartnerProgramsPage } from "./pages/PartnerProgramsPage";
 import { AboutUsPage } from "./pages/AboutUsPage";
+import { FAQsPage } from "./pages/FAQsPage";
 import { OrderOnlinePage } from "./pages/OrderOnlinePage";
 import { ContactPage } from "./pages/ContactPage";
 import { measurePageLoad } from "./lib/performance";
@@ -25,6 +26,7 @@ createRoot(document.getElementById("app") as HTMLElement).render(
         <Route path="/resources" element={<ResourcesPage />} />
         <Route path="/partner-programs" element={<PartnerProgramsPage />} />
         <Route path="/about-us" element={<AboutUsPage />} />
+        <Route path="/faqs" element={<FAQsPage />} />
         <Route path="/order-online" element={<OrderOnlinePage />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>

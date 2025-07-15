@@ -13,7 +13,7 @@ export const ProductsPage = (): JSX.Element => {
     {
       id: 'heavy-equipment-retreading',
       name: t('megaMenu.service1'),
-      image: "/images/sub/Heavy Equipment Tire Retreading/IMG_20180227_102944 (2).jpg",
+      image: "/images/sub/Heavy Equipment Tire Retreading/DSC_5673.JPG",
       desc: t('megaMenu.serviceCard1Desc'),
     },
     {

@@ -14,9 +14,6 @@ export const ContainerScreen = (): JSX.Element => {
         <SlideshowSection />
         <WhoWeAreSection />
         <HeroSection />
-
-        <RoadmapTimelineSection />
-
         <FooterSection /> 
       </div>
     </div>

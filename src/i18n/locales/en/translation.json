@@ -6,6 +6,7 @@
     "resources": "Resources",
     "partnerPrograms": "Partner Programs",
     "aboutUs": "About Us",
+    "faqs": "FAQs",
     "orderOnline": "Jobs",
     "contact": "Contact"
   },
@@ -14,9 +15,9 @@
   },
   "services": {
     "heading": "Tire Retreading Services",
-    "heavyEquipment": "Heavy Equipment Tire Retreading",
-    "heavyTransport": "Heavy Transport Tire Retreading",
-    "damageRepair": "Tire Damage Repair Services",
+    "heavyEquipment": "OTR Retreading",
+    "heavyTransport": "Truck Tires Retreading",
+    "damageRepair": "Solid Tires Retreading",
     "italianTech": "Italian Imported Retreading Technology",
     "customized": "Customized Retreading Solutions"
   },
@@ -63,7 +64,8 @@
     "aboutUs": "About Us",
     "products": "Products",
     "services": "Services",
-    "partnerPrograms": "Jobs",
+    "faqs": "FAQs",
+    "partnerPrograms": "Careers",
     "uploadCv": "Upload Your CV",
     "contact": "Contact",
     "contactInfo": "Contact Information",
@@ -86,7 +88,7 @@
     "costSavingsDesc": "Our retreading solutions help clients significantly reduce operational costs compared to buying new tires.",
     "environmentTitle": "Environmental Responsibility",
     "environmentDesc": "We protect the environment by recycling used tires and reintegrating them into production, reducing waste and pollution.",
-    "qualityTitle": "Quality Assurance",
+    "qualityTitle": "Quality Control",
     "qualityDesc": "We use premium raw materials and strict quality control to ensure durable and safe retreaded tires.",
     "fastTurnaroundTitle": "Fast Turnaround",
     "fastTurnaroundDesc": "Efficient processes mean quicker delivery times, minimizing equipment downtime for our clients."
@@ -97,10 +99,10 @@
   },
   "megaMenu": {
     "productsSection": "Tire Retreading Services",
-    "service1": "Heavy Equipment Tire Retreading",
-    "service2": "Heavy Transport Tire Retreading",
-    "service3": "Tire Damage Repair Services",
-    "service4": "Tire Repair",
+    "service1": "OTR Retreading",
+    "service2": "Truck Tires Retreading",
+    "service3": "Solid Tires Retreading",
+    "service4": "Repair Truck and OTR Tires",
     "service5": "Customized Retreading Solutions",
     "serviceCard1Desc": "High-quality retreading for loaders, excavators, and other heavy machinery using advanced Italian technology.",
     "serviceCard2Desc": "Retreading services for trucks and trailers to reduce costs and preserve the environment.",
@@ -119,6 +121,10 @@
     "email": "INFO@TURTLEWAXPRO.COM",
     "switchLanguage": "العربية",
     "learnMore": "Learn More"
+  },
+  "slideshow": {
+    "companyName": "Egyptian Italian Retreading Company",
+    "tagline": "Specialists in retreading and repairing heavy equipment and transport tires since 2004"
   },
   "qa": {
     "title": "Frequently Asked Questions",
@@ -140,6 +146,12 @@
         "answer": "For transport vehicle tires, the tread depth must not be less than 2 mm before the tread rubber wears down to the steel belt. After that, the tire is inspected by a company technician to determine its suitability for retreading."
       }
     ]
+  },
+  "faqs": {
+    "introduction": "Find answers to the most commonly asked questions about our tire retreading services, processes, and company. If you don't find what you're looking for, feel free to contact us directly.",
+    "contactTitle": "Still Have Questions?",
+    "contactText": "Can't find the answer you're looking for? Our team is here to help with any specific questions about our services.",
+    "contactButton": "Contact Us"
   },
   "uploadCV": {
     "title": "Upload Your CV",
@@ -174,7 +186,7 @@
     },
     "20102015": {
       "year": "2010–2015",
-      "desc": "Expands services to include specialized tire repairs for punctures, cuts, and cracks."
+      "desc": "Expands services to include specialized Repair Truck and OTR Tiress for punctures, cuts, and cracks."
     },
     "20152020": {
       "year": "2015–2020",
