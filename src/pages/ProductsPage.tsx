@@ -79,7 +79,7 @@ export const ProductsPage = (): JSX.Element => {
                   <h3 className="text-xl font-semibold mb-2 text-[#1B3958]">{service.name}</h3>
                   <p className="text-gray-600 mb-4">{service.desc}</p>
                                       <button className="text-[#1B3958] font-medium hover:text-[#2A4A57] transition-colors duration-200">
-                    {t('common.learnMore')}
+                    {t('learnMore')}
                   </button>
                 </div>
               </div>

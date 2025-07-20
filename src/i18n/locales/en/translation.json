@@ -24,20 +24,20 @@
 
   "productCards": {
     "heavyEquipment": {
-      "title": "Heavy Equipment Retreading",
-      "desc": "High-quality retreading for loaders, excavators, and other machinery using advanced Italian technology."
+      "title": "OTR Tire Retreading",
+      "desc": "High-quality retreading for loaders wheel, excavators, and other heavy machinery using advanced technology."
     },
     "heavyTransport": {
-      "title": "Heavy Transport Retreading",
+      "title": "Truck Tire Retreading",
       "desc": "Retreading services for trucks and trailers to reduce costs and preserve the environment."
     },
     "damageRepairs": {
-      "title": "Cast Tire Renewal",
-      "desc": "Renewing cast tires helps preserve the internal material of the tire (foam), which saves the high cost of injecting a new tire with this material."
+      "title": "Retreading Solid Tires",
+      "desc": "Retreading solid tires will reduce the cost of injecting filling foam inside tire and extract the life time of solid tire"
     },
     "italianTech": {
-      "title": "Italian Technology",
-      "desc": "Advanced machinery and techniques imported from Italy for superior retreading results."
+      "title": "Tire Repair",
+      "desc": "We repair all OTR and truck tires problems"
     }
   },
   "aboutUsSection": {
@@ -81,7 +81,7 @@
   "whyChoose": {
     "heading": "Why Choose Us?",
     "experienceTitle": "Experience You Can Trust",
-    "experienceDesc": "Over 20 years in tire retreading for heavy equipment and transport vehicles, delivering reliable results.",
+    "experienceDesc": "Over 20 years in tire retreading for OTR and Truck tire, delivering reliable results.",
     "italianTechTitle": "Italian Technology & Expertise",
     "italianTechDesc": "We use advanced machinery imported from Italy and rely on expert Italian training for our technicians.",
     "costSavingsTitle": "Cost Savings",
@@ -242,18 +242,18 @@
     "backToProducts": "Back to Products",
     "features": {
       "heavyEquipment": [
-        "High-quality retreading for loaders and excavators",
+        "High-quality retreading materials for loaders wheel excavators and all high way from trucks",
         "Advanced Italian technology and equipment",
         "Extended tire life and cost savings",
         "Environmentally friendly process",
-        "Skilled technicians and quality assurance"
+        "Skilled technicians and quality control"
       ],
       "heavyTransport": [
-        "Retreading services for trucks and trailers",
+        "Eligible truck tire for retreading its tread depth should not be less than 2mm",
+        "Truck tire will be inspected by our technical to determine eligibility of tire to retreading",
         "Cost-effective alternative to new tires",
         "Environmental sustainability focus",
-        "Quality control and testing",
-        "Fast turnaround times"
+        "Quality control and testing"
       ],
       "tireDamageRepairs": [
         "Renewing cast tires preserves internal tire material",
@@ -263,10 +263,10 @@
         "Quick renewal turnaround"
       ],
       "tireRepair": [
+        "We repair all OTR and truck tires problems",
         "Repair of punctures and surface cuts",
         "Repair and renewal of the tire sidewall",
         "Repair of the tire rim edge (bead)",
-        "Repair of punctures",
         "Repair of surface cuts whether on the sidewalls or the tread"
       ],
       "customizedRetreading": [

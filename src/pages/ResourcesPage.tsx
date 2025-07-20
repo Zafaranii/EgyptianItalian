@@ -102,7 +102,7 @@ export const ResourcesPage = (): JSX.Element => {
                   <h3 className="text-xl font-semibold mb-2 text-[#1B3958]">Best Practices</h3>
                   <p className="text-gray-600 mb-4">Industry best practices and tips for optimal car wash operations.</p>
                   <Button className="bg-[#1B3958] hover:bg-[#2A4A57] text-white">
-                    Learn More
+                    {t('learnMore')}
                   </Button>
                 </div>
               </div>

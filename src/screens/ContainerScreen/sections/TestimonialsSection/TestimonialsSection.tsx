@@ -1,9 +1,11 @@
-// import React from "react";
+import React from "react";
+import { useTranslation } from "react-i18next";
 import { Button } from "../../../../components/ui/button";
 import { Card, CardContent } from "../../../../components/ui/card";
 import { Separator } from "../../../../components/ui/separator";
 
 export const TestimonialsSection = (): JSX.Element => {
+  const { t } = useTranslation();
   // Data for the bottom cards
   const bottomCards = [
     {
@@ -45,7 +47,7 @@ export const TestimonialsSection = (): JSX.Element => {
             className="absolute w-[137px] h-11 top-[316px] left-0 bg-[#ffffffbf] border border-solid border-white rounded-none hover:bg-white hover:text-[#1B3958] transition-colors duration-300"
           >
                           <span className="font-normal text-[#1B3958] text-[13px] text-center tracking-[0.75px] leading-[19.7px]">
-              LEARN MORE
+              {t('learnMore')}
             </span>
           </Button>
         </div>
