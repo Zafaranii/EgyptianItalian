@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "../components/ui/button";
 import { PageLayout } from "../components/layout/PageLayout";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "../../node_modules/react-i18next";
 
 export const PartnerProgramsPage = (): JSX.Element => {
   const navigate = useNavigate();

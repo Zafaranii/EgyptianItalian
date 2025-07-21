@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "../../node_modules/react-i18next";
 import { PageLayout } from "../components/layout/PageLayout";
 import { Button } from "../components/ui/button";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";

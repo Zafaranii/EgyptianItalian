@@ -15,9 +15,9 @@
   },
   "services": {
     "heading": "Tire Retreading Services",
-    "heavyEquipment": "OTR Retreading",
-    "heavyTransport": "Truck Tires Retreading",
-    "damageRepair": "Solid Tires Retreading",
+    "heavyEquipment": "OTR Tire Retreading",
+    "heavyTransport": "Truck Tire Retreading",
+    "damageRepair": "Retreading Solid Tires",
     "italianTech": "Italian Imported Retreading Technology",
     "customized": "Customized Retreading Solutions"
   },
@@ -33,7 +33,7 @@
     },
     "damageRepairs": {
       "title": "Retreading Solid Tires",
-      "desc": "Retreading solid tires will reduce the cost of injecting filling foam inside tire and extract the life time of solid tire"
+      "desc": "Retreading solid tires will reduce the cost of injecting filling foam inside tire and extract the life time of solid tire."
     },
     "italianTech": {
       "title": "Tire Repair",
@@ -99,15 +99,15 @@
   },
   "megaMenu": {
     "productsSection": "Tire Retreading Services",
-    "service1": "OTR Retreading",
-    "service2": "Truck Tires Retreading",
-    "service3": "Solid Tires Retreading",
-    "service4": "Repair Truck and OTR Tires",
+    "service1": "OTR Tire Retreading",
+    "service2": "Truck Tire Retreading",
+    "service3": "Retreading Solid Tires",
+    "service4": "Tire Repair",
     "service5": "Customized Retreading Solutions",
-    "serviceCard1Desc": "High-quality retreading for loaders, excavators, and other heavy machinery using advanced Italian technology.",
+    "serviceCard1Desc": "High-quality retreading for loaders wheel, excavators, and other heavy machinery using advanced technology.",
     "serviceCard2Desc": "Retreading services for trucks and trailers to reduce costs and preserve the environment.",
-    "serviceCard3Desc": "Renewing cast tires helps preserve the internal material of the tire (foam), which saves the high cost of injecting a new tire with this material.",
-    "serviceCard4Desc": "We repair all tires of heavy equipment and heavy transport",
+    "serviceCard3Desc": "Retreading solid tires will reduce the cost of injecting filling foam inside tire and extract the life time of solid tire.",
+    "serviceCard4Desc": "We repair all OTR and truck tires problems",
     "serviceCard5Desc": "Tailored retreading solutions to meet unique client needs and applications.",
     "quickAccess": "QUICK ACCESS",
     "contactSupport": "Contact Support",
@@ -249,25 +249,14 @@
         "Skilled technicians and quality control"
       ],
       "heavyTransport": [
-        "Eligible truck tire for retreading its tread depth should not be less than 2mm",
-        "Truck tire will be inspected by our technical to determine eligibility of tire to retreading",
-        "Cost-effective alternative to new tires",
-        "Environmental sustainability focus",
-        "Quality control and testing"
+        "Eligible truck tire for retreading its tread elepth should not be loss than 2m",
+        "Truck tire will be inspected by our technical to determine eligibility of tire to retreading"
       ],
       "tireDamageRepairs": [
-        "Renewing cast tires preserves internal tire material",
-        "Cost savings on new tire injection",
-        "Advanced renewal techniques and materials",
-        "Quality assurance and testing",
-        "Quick renewal turnaround"
+        "Retreading solid tires will reduce the cost of injecting filling foam inside tire and extract the life time of solid tire"
       ],
       "tireRepair": [
-        "We repair all OTR and truck tires problems",
-        "Repair of punctures and surface cuts",
-        "Repair and renewal of the tire sidewall",
-        "Repair of the tire rim edge (bead)",
-        "Repair of surface cuts whether on the sidewalls or the tread"
+        "We repair all OTR and truck tires problems"
       ],
       "customizedRetreading": [
         "Customized solutions for specific needs",

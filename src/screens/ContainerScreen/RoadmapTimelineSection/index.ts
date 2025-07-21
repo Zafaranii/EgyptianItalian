@@ -1,1 +1,1 @@
-export { RoadmapTimelineSection } from "../RoadmapTimelineSection/RoadmapTimelineSection"; 
+export { RoadmapTimelineSection } from "./RoadmapTimelineSection"; 

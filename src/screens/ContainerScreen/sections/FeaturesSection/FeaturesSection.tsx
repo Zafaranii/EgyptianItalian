@@ -1,6 +1,6 @@
 import React, { useState, useMemo, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "../../../../../node_modules/react-i18next";
 // import { Input } from "../../../../components/ui/input";
 import { Separator } from "../../../../components/ui/separator";
 import { MegaMenu } from "../../../../components/ui/mega-menu";

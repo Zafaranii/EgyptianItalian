@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "../../../../node_modules/react-i18next";
 
 export const SlideshowSection = (): JSX.Element => {
   const { t, i18n } = useTranslation();

@@ -1,5 +1,5 @@
 import React from "react";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "../../../../../node_modules/react-i18next";
 import { FaRegHandshake, FaLeaf, FaMoneyBillWave } from "react-icons/fa";
 import { GiGearHammer } from "react-icons/gi";
 import { MdVerified, MdSpeed } from "react-icons/md";
