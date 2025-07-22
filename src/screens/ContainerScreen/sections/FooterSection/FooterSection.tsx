@@ -115,6 +115,12 @@ export const FooterSection = (): JSX.Element => {
       </div>
       <div className="max-w-6xl mx-auto mt-8 border-t border-gray-700 pt-6 flex flex-col items-center justify-center text-sm text-gray-400">
         <div>{t('footer.copyright')}</div>
+        <div className="font-bold">
+          Website designed and developed by{' '}
+          <a href="https://www.linkedin.com/company/alt-mate-agency/" target="_blank" rel="noopener noreferrer" className="underline text-gray-300 font-bold">
+            ALT MATE Agency
+          </a>
+        </div>
       </div>
     </footer>
   );
