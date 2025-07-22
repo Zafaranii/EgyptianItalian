@@ -242,21 +242,24 @@
     "backToProducts": "Back to Products",
     "features": {
       "heavyEquipment": [
-        "High-quality retreading materials for loaders wheel excavators and all high way from trucks",
-        "Advanced Italian technology and equipment",
+        "High-quality retreading materials for OTR OFF high way trucks",
         "Extended tire life and cost savings",
         "Environmentally friendly process",
         "Skilled technicians and quality control"
       ],
       "heavyTransport": [
         "Eligible truck tire for retreading its tread elepth should not be loss than 2m",
-        "Truck tire will be inspected by our technical to determine eligibility of tire to retreading"
+        "Eligibility of tire to retreading"
       ],
       "tireDamageRepairs": [
         "Retreading solid tires will reduce the cost of injecting filling foam inside tire and extract the life time of solid tire"
       ],
       "tireRepair": [
-        "We repair all OTR and truck tires problems"
+        "Repair of punctures and surface cuts",
+        "Repair and renewal of the tire sidewall",
+        "Repair of the tire rim edge (bead)",
+        "Repair of punctures",
+        "Repair of surface cuts whether on the sidewalls or the tread"
       ],
       "customizedRetreading": [
         "Customized solutions for specific needs",
